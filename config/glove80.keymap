@@ -159,9 +159,13 @@
                      , <&kp A>
                      , <&kp Y>
                      , <&kp L>
-                     , <&kp K>;
-                     , <&kp E>;
-			antecedents = <A E C D E G I J J K L M O P R S U>;
+                     , <&kp K>
+                     , <&kp E>
+                     , <&magic_er>
+                     , <&kp P>
+                     , <&kp GT>
+                     , <&kp GT>;
+			antecedents = <A E C D E G I J J K L M O P R S U V Y MINUS, EQUALS>;
 			max-delay-ms = <250>;
         };
     };
@@ -179,6 +183,12 @@
             bindings = <&kp U>
                     , <&kp S>
                     , <&kp T>;
+        )
+        ZMK_MACRO(magic_er,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp E>                    
+                    , <&kp R>;
         )
 
         ZMK_MACRO(FatArrow,
