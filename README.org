@@ -6,6 +6,16 @@ I need a layout for
 - gamingin is out of scope. I just use another keyboard.
 
 ** layouts
+
+*** Magic Sturdy
+    [[https://github.com/getreuer/qmk-keymap][Pascals version]].
+    #+BEGIN_SRC
+    V M L C P            B ^ U O , /
+    S T R D Y            F N E A I '
+    X K J G W            Z H , . ;
+            ⎵ ⇥     / @ ⇧
+    #+END_SRC
+
 *** Focal-keyboard-layout
     #+BEGIN_SRC
     v l h g k   q f o u j
@@ -16,6 +26,16 @@ I need a layout for
     I need to find a solution for ei an ie as it is both a very common bigrams in German.
     An alternative could be the [[https://oxey.dev/dhorf/index.html][Dhorf layout]].
 
+* Thumb Shift or Thumb Alpha?
+I need to decide on it and I need to find out which key to put on it?
+
+* Magic and stuff
+I use the [[https://github.com/klausweiss/zmk/blob/fix/adaptive-keys/docs/docs/behaviors/antecedent-morph.md][Antecedent Morph]] to emove some silly 
+patterns.
+
+** Magic on a Thumb.
+ in [[https://github.com/joa/graphite][joa's graphite]] layout he uses a thumb for shift on hold and magic on tap. This could
+ be an option too.
 
 * Sources and Inspirations
 - [[Antecedent Morph Example][https://github.com/MikeSE314/zmk-config]]
