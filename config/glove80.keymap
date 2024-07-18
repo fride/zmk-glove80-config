@@ -126,7 +126,7 @@
             #binding-cells = <0>;
 			defaults = <&kp N>;
             bindings = <&kp O>, <&kp B>,<&kp Y>, <&kp Y>, <&kp U>, <&kp Y>;
-			antecedents = <A E C D, E, G>;
+			antecedents = <A E C D E G>;
 			max-delay-ms = <250>;
         };
     };
