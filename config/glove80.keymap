@@ -253,13 +253,10 @@
         ZMK_MACRO(AppSwitch,
             wait-ms = <50>;
             tap-ms = <20>;
-            bindings  = 
-            // <&macro_press &mo NAVI>
-                      , <&macro_press &kp LGUI>
+            bindings  = <&macro_press &kp LGUI>
                       , <&macro_tap &kp TAB>
                       , <&macro_pause_for_release>
                       , <&macro_release &kp LGUI>
-               //       , <&macro_release &mo NAVI>
             ;
         )
     };
