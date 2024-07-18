@@ -16,6 +16,12 @@ I need a layout for
     I need to find a solution for ei an ie as it is both a very common bigrams in German.
     An alternative could be the [[https://oxey.dev/dhorf/index.html][Dhorf layout]].
 
+* Thumb Shift or Thumb Alpha?
+I need to decide on it and I need to find out which key to put on it?
+
+* Magic and stuff
+I use the [[https://github.com/klausweiss/zmk/blob/fix/adaptive-keys/docs/docs/behaviors/antecedent-morph.md][Antecedent Morph]] to emove some silly 
+patterns.
 
 * Sources and Inspirations
 - [[Antecedent Morph Example][https://github.com/MikeSE314/zmk-config]]
