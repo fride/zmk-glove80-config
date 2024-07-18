@@ -139,14 +139,19 @@
             label = "THE_MAGIC_KEY";
             #binding-cells = <0>;
 			defaults = <&kp N>;
-            bindings = <&kp O>, <&kp B>,<&kp Y>, <&kp Y>, <&kp U>, <&kp Y>;
-			antecedents = <A E C D E G>;
+            bindings = <&kp O>, <&kp B>,<&kp Y>, <&kp Y>, <&kp U>, <&kp Y>, <&magic_on>;
+			antecedents = <A E C D E G I>;
 			max-delay-ms = <250>;
         };
     };
 
     macros {
-
+        ZMK_MACRO(magic_on,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp O>
+                    , <&kp N>;
+        )
 
         ZMK_MACRO(FatArrow,
             wait-ms  = <10>;
