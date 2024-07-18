@@ -240,14 +240,13 @@
         ZMK_MACRO(AppSwitch,
             wait-ms = <50>;
             tap-ms = <20>;
-            bindings =
-                    <&macro_press &kp RGUI>    // leave GUI down to keep menu up
-                  , <&macro_tap &kp TAB>       // (use press for repeat)
-                  , <&tog NAVI>                // to navigate the app menu
-                  , <&macro_pause_for_release> // hold to keep menu up or for repeat ...
-                  , <&tog NAVI>                // done navigating
-                  , <&macro_release &kp RGUI>  // release the previous hold
-                  ;
+            bindings  = <&macro_press &mo l_nav>
+                      , <&macro_press &kp LGUI>
+                      , <&macro_tap &kp TAB>
+                      , <&macro_pause_for_release>
+                      , <&macro_release &kp LGUI>
+                      , <&macro_release &mo l_nav>
+            ;
         )
     };
 
