@@ -146,6 +146,21 @@
     };
 
     macros {
+
+
+        ZMK_MACRO(FatArrow,
+            wait-ms  = <10>;
+            tap-ms   = <10>;
+            bindings = <&kp EQUAL>
+                    , <&kp GT>;
+        )
+
+        ZMK_MACRO(Arrow,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp MINUS>
+                    , <&kp GT>;
+        )
         bt_0: bt_profile_macro_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
