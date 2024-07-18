@@ -11,6 +11,8 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
+
+
 // layers
 #define DEFAULT 0
 #define LOWER 1
@@ -25,6 +27,16 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo LOWER>, <&to LOWER>;
+        };
+
+        ad_a: adaptive_a {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "ADAPTIVE_A";
+            #binding-cells = <0>;
+			defaults = <&kp A>;
+            bindings = <&kp U>, <&kp O>;
+			antecedents = <Q Z>;
+			max-delay-ms = <250>;
         };
     };
 
