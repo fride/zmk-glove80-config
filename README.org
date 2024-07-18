@@ -23,6 +23,10 @@ I need to decide on it and I need to find out which key to put on it?
 I use the [[https://github.com/klausweiss/zmk/blob/fix/adaptive-keys/docs/docs/behaviors/antecedent-morph.md][Antecedent Morph]] to emove some silly 
 patterns.
 
+** Magic on a Thumb.
+ in [[https://github.com/joa/graphite][joa's graphite]] layout he uses a thumb for shift on hold and magic on tap. This could
+ be an option too.
+ 
 * Sources and Inspirations
 - [[Antecedent Morph Example][https://github.com/MikeSE314/zmk-config]]
 - [[https://github.com/getreuer/qmk-keymap][Pascal Getreuer]]
