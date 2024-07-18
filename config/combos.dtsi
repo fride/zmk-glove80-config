@@ -42,8 +42,4 @@ combos {
        COMBO_ANY(ESC,          &kp ESC,       37 38)
        COMBO_ANY(COLON,        &kp COLON,     41 42)
        COMBO_ANY(SLASH,        &kp SLASH,           31 32)
-
-
-       // could be an adaptive key!?
-       COMBO_ANY(combo_sch,    &Sch,  48 49)
 };
