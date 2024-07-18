@@ -118,6 +118,7 @@
             quick-release;
             ignore-modifiers;
         };
+
         ad_a: adaptive_a {
             compatible = "zmk,behavior-antecedent-morph";
             label = "ADAPTIVE_A";
@@ -125,15 +126,6 @@
 			defaults = <&kp A>;
             bindings = <&kp U>, <&kp O>;
 			antecedents = <Q Z>;
-			max-delay-ms = <250>;
-        };
-        ad_dot: adaptive_dot {
-            compatible = "zmk,behavior-antecedent-morph";
-            label = "ADAPTIVE_DOT";
-            #binding-cells = <0>;
-			defaults = <&kp DOT>;
-            bindings = <&kp I>;
-			antecedents = <E>;
 			max-delay-ms = <250>;
         };
 
