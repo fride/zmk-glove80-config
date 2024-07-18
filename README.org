@@ -5,6 +5,16 @@ I need a layout for
 - for coding, meaning symbols and shortcuts must be easy to reach
 - gamingin is out of scope. I just use another keyboard.
 
+** layouts
+*** Focal-keyboard-layout
+    #+BEGIN_SRC
+    v l h g k   q f o u j
+    s r n t b   y c a e i
+    z x m d p   ' w . ; ,
+    #+END_SRC
+
+    I need to find a solution for ei an ie as it is both a very common bigrams in German.
+    An alternative could be the [[https://oxey.dev/dhorf/index.html][Dhorf layout]].
 
 
 * Sources and Inspirations
@@ -19,4 +29,4 @@ I need a layout for
 - https://docs.google.com/document/d/1_a5Nzbkwyk1o0bvTctZrtgsee9jSP-6I0q3A0_9Mzm0/edit#heading=h.uy0p1j6rzpsl
 - https://cyanophage.github.io/playground.html?layout=jcyfkzl,uq=rsthdmnaio%27/vgpbxw.;-%5Ce
 - https://github.com/moutis/zmk-Zen/blob/main/config/corne-ish_zen.l_alpha-HD-vb.dtsi
-
+- https://www.reddit.com/r/KeyboardLayouts/comments/1e2jzra/bestperforming_layout_in_my_comparison_beats_both/
