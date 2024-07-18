@@ -47,6 +47,16 @@
 			antecedents = <E>;
 			max-delay-ms = <250>;
         };
+
+        magic: the_magic_key {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "THE_MAGIC_KEY";
+            #binding-cells = <0>;
+			defaults = <&kp N>;
+            bindings = <&kp O>, <&kp B>,<&kp Y>, <&kp Y>;
+			antecedents = <A E C D>;
+			max-delay-ms = <250>;
+        };
     };
 
     macros {
@@ -101,9 +111,12 @@
             &kp TAB        &kp V    &kp L       &kp H       &kp G       &kp K                                                                      &kp Q    &kp F   &kp O       &kp U       &kp J       &kp BSLH
             &kp ESC        &kp S    &kp R       &kp N       &kp T       &kp B                                                                      &kp Y    &kp C   &kp A       &kp E       &kp I       &kp SQT
             &kp GRAVE      &kp Z    &kp X       &kp M       &kp D       &kp P   &kp LSHFT   &kp LCTRL   &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &kp SQT  &kp W   &ad_dot     &kp SEMI    &kp FSLH    &kp PG_UP
-            &mo MAGIC      &kp HOME &kp END     &kp LEFT    &kp RIGHT           &kp SPACE   &kp DEL     &kp LALT   &kp RALT  &kp RET   &kp SPACE            &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &mo MAGIC
+            &mo MAGIC      &kp HOME &kp END     &kp LEFT    &kp RIGHT           &kp SPACE   &kp DEL     &kp LALT   &kp RALT  &kp RET   &magic               &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &mo MAGIC
             >;
         };
+
+
+
 
         lower_layer {
             bindings = <
