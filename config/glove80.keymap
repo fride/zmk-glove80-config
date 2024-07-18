@@ -165,7 +165,7 @@
                      , <&kp P>
                      , <&kp GT>
                      , <&kp GT>;
-			antecedents = <A E C D E G I J J K L M O P R S U V Y MINUS, EQUALS>;
+			antecedents = <A E C D E G I J J K L M O P R S U V Y MINUS EQUALS>;
 			max-delay-ms = <250>;
         };
     };
