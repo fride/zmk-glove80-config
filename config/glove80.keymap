@@ -291,7 +291,7 @@
                 &trans            &kp GRAVE           &kp EQUAL       &kp MINUS       &kp UNDER       &kp STAR                                                                              &kp BSLH     &kp N4         &kp N5       &kp N6        &kp PLUS        &kp SLASH
                 &trans            &kp N7              &kp N5          &kp LSHFT       &hml LSFT N1    &kp PLUS                                                                              &kp COLON    &kp N4         &kp N5       &kp N6        &kp MINUS       &kp STAR
                 &trans            &kp LT              &kp COLON       &kp LSHFT       &trans          &kp CARET       &trans      &trans      &trans      &trans      &trans      &trans    &kp COMMA    &kp N1         &kp N2       &kp N3        &kp DOT         &trans
-                &trans            &ktrans             &trans          &ktrans         &trans                         &kp SPACE   &trans      &trans      &trans      &trans      &kp N0                 &trans         &trans       &trans        &trans          &trans
+                &trans            &trans              &trans          &trans          &trans                         &kp SPACE   &trans      &trans      &trans      &trans      &kp N0                 &trans         &trans       &trans        &trans          &trans
             >;
         };        
 
