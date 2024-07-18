@@ -47,7 +47,7 @@
 
 // layers
 #define DEFAULT 0
-#define FOCAL   1
+// #define FOCAL   1
 #define SYMBOLS 2
 #define NUMBERS 3
 #define NAVI    4
@@ -277,16 +277,16 @@
             >;
         };
 
-        focal {            
-            bindings = <
-            &to 0             &trans          &trans         &trans        &trans                                                                                                 &trans       &trans      &trans      &trans         &trans
-            &trans            &trans          &trans         &trans        &trans         &kp HOME                                                                   &trans       &trans       &trans      &trans      &trans         &trans
-            &kp TAB           &kp V           &kp L          &kp H         &kp G          &kp K                                                                      &kp Q        &kp F        &kp O       &kp U       &kp J          &kp BSLH
-            &kp ESC           &lt SYMBOLS S   &kp R          &kp N         &hml LSFT T    &kp B                                                                      &kp Y        &hmr LSFT C  &kp A       &kp E       &key_repeat    &kp SQT
-            &kp GRAVE         &kp Z           &kp X          &kp M         &lt NUMBERS D  &kp P   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp SQT      &kp W        &kp DOT     &kp SEMI    &kp COMMA      &kp PG_UP
-            &mo MAGIC         &kp HOME        &kp END        &kp LEFT      &kp RIGHT              NAV_SPCAE   &kp LALT    &kp LGUI   &kp RGUI &kp RALT  &lt NUM_I                 &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
-            >;
-        };
+        // focal {            
+        //     bindings = <
+        //     &to 0             &trans          &trans         &trans        &trans                                                                                                 &trans       &trans      &trans      &trans         &trans
+        //     &trans            &trans          &trans         &trans        &trans         &kp HOME                                                                   &trans       &trans       &trans      &trans      &trans         &trans
+        //     &kp TAB           &kp V           &kp L          &kp H         &kp G          &kp K                                                                      &kp Q        &kp F        &kp O       &kp U       &kp J          &kp BSLH
+        //     &kp ESC           &lt SYMBOLS S   &kp R          &kp N         &hml LSFT T    &kp B                                                                      &kp Y        &hmr LSFT C  &kp A       &kp E       &key_repeat    &kp SQT
+        //     &kp GRAVE         &kp Z           &kp X          &kp M         &lt NUMBERS D  &kp P   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp SQT      &kp W        &kp DOT     &kp SEMI    &kp COMMA      &kp PG_UP
+        //     &mo MAGIC         &kp HOME        &kp END        &kp LEFT      &kp RIGHT              NAV_SPCAE   &kp LALT    &kp LGUI   &kp RGUI &kp RALT  &lt NUM_I                 &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
+        //     >;
+        // };
 
         l_sym {
             bindings = <
