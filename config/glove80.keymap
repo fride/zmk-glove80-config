@@ -165,8 +165,9 @@
                      , <&kp P>
                      , <&kp GT>
                      , <&kp GT>
-                     , <&kp SLASH>;
-			antecedents = <A E C D E G I J J K L M O P R S U V Y MINUS EQUAL DOT>;
+                     , <&kp SLASH>
+                     , <&kp GT>;
+			antecedents = <A E C D E G I J J K L M O P R S U V Y MINUS EQUAL DOT STAR>;
 			max-delay-ms = <250>;
         };
     };
@@ -267,7 +268,7 @@
             &kp EQUAL      &kp N1          &kp N2      &kp N3      &kp N4         &kp N5                                                                     &kp N6   &kp N7       &kp N8      &kp N9      &kp N0         &kp MINUS
             &kp TAB        &kp V           &kp M       &kp L       &kp C          &kp P                                                                      &kp B    &magic       &kp U       &kp O       &kp Q          &kp BSLH
             &kp ESC        &lt SYMBOLS S   &kp T       &kp R       &hml LSFT D    &kp Y                                                                      &kp F    &hmr LSFT N  &kp E       &kp A       &lt SYMBOLS I  &kp SQT
-            &kp GRAVE      &kp X           &kp K       &kp J       &lt NUMBERS G  &kp W   &kp LSHFT   &kp LCTRL   &kp LALT  &kp LGUI  &kp RCTRL &kp RSHFT    &kp Z    &kp H        &kp COMMA   &kp COMMA   &kp SEMI       &kp PG_UP
+            &kp GRAVE      &kp X           &kp K       &kp J       &lt NUMBERS G  &kp W   &kp LSHFT   &kp LCTRL   &kp LALT  &kp LGUI  &kp RCTRL &kp RSHFT    &kp Z    &kp H        &kp COMMA   &kp DOT     &kp SEMI       &kp PG_UP
             &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_SPCAE   &kp DEL     &kp LALT   &kp RALT  &kp RET  &skq LSFT             &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
             >;
         };
