@@ -47,10 +47,11 @@
 
 // layers
 #define DEFAULT 0
-#define SYMBOLS 1
-#define NUMBERS 2
-#define NAVI    3
-#define MAGIC   4
+#define FOCAL   1
+#define SYMBOLS 2
+#define NUMBERS 3
+#define NAVI    4
+#define MAGIC   5
 
 // modifiers
 #define HYPER LC(LS(LG(LALT)))
@@ -146,6 +147,16 @@
             global-quick-tap;
             bindings = <&FatArrow>, <&Arrow>;
         };
+
+        ad_dot: ad_dot {
+            #binding-cells = <0>;
+			defaults = <&kp N>;
+            bindings = <&kp I>
+                     , <&kp GT>;
+			antecedents = <E>;
+			max-delay-ms = <250>;
+        };
+
         // see https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md
         // Prev 	A 	B 	C 	D 	E 	F 	G 	H 	I 	J 	K 	L 	M 	N 	O 	P
         // Magic 	O 	EFORE 	Y 	Y 	U 	-- 	Y 	-- 	ON 	UST 	S 	k 	ENT 	ION 	A 	Y																
@@ -274,12 +285,23 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-            &kp F1         &kp F2          &kp F3      &kp F4      &kp F5                                                                                             &kp F6       &kp F7      &kp F8      &kp F9         &kp F10
+            &to 1          &kp F2          &kp F3      &kp F4      &kp F5                                                                                             &kp F6       &kp F7      &kp F8      &kp F9         &kp F10
             &kp EQUAL      &kp N1          &kp N2      &kp N3      &kp N4         &kp N5                                                                     &kp N6   &kp N7       &kp N8      &kp N9      &kp N0         &kp MINUS
             &kp TAB        &kp V           &kp M       &kp L       &kp C          &kp P                                                                      &kp B    &magic       &kp U       &kp O       &kp Q          &kp BSLH
             &kp ESC        &lt SYMBOLS S   &kp T       &kp R       &hml LSFT D    &kp Y                                                                      &kp F    &hmr LSFT N  &kp E       &kp A       &repeat_key    &kp SQT
             &kp GRAVE      &kp X           &kp K       &kp J       &lt NUMBERS G  &kp W   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp Z    &kp H        &kp COMMA   &kp DOT     &kp SEMI       &kp PG_UP
             &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_SPCAE   &kp LALT    &kp LGUI   &kp RGUI &kp RALT  &lt NUM I             &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
+            >;
+        };
+
+        focal {            
+            bindings = <
+            &to 0             &trans          &trans         &trans        &trans                                                                                                 &trans       &trans      &trans      &trans         &trans
+            &trans            &trans          &trans         &trans        &trans         &kp HOME                                                                   &trans       &trans       &trans      &trans      &trans         &trans
+            &kp TAB           &kp V           &kp L          &kp H         &kp G          &kp K                                                                      &kp Q        &kp F        &kp O       &kp U       &kp J          &kp BSLH
+            &kp ESC           &lt SYMBOLS S   &kp R          &kp N         &hml LSFT T    &kp B                                                                      &kp Y        &hmr LSFT C  &kp A       &kp E       &kp I         &kp SQT
+            &kp GRAVE         &kp Z           &kp X          &kp M         &lt NUMBERS D  &kp P   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp SQT      &kp W        &ad_dot     &kp SEMI    &kp COMMA       &kp PG_UP
+            &mo MAGIC         &kp HOME        &kp END        &kp LEFT      &kp RIGHT              NAV_SPCAE   &kp LALT    &kp LGUI   &kp RGUI &kp RALT  &lt NUM I                 &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
             >;
         };
 
