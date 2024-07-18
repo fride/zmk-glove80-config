@@ -279,7 +279,7 @@
             &kp TAB        &kp V           &kp M       &kp L       &kp C          &kp P                                                                      &kp B    &magic       &kp U       &kp O       &kp Q          &kp BSLH
             &kp ESC        &lt SYMBOLS S   &kp T       &kp R       &hml LSFT D    &kp Y                                                                      &kp F    &hmr LSFT N  &kp E       &kp A       &key_repeat    &kp SQT
             &kp GRAVE      &kp X           &kp K       &kp J       &lt NUMBERS G  &kp W   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp Z    &kp H        &kp COMMA   &kp DOT     &kp SEMI       &kp PG_UP
-            &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_SPCAE   &kp LALT    &kp LGUI   &kp RGUI &kp RALT  &lt NUM_I             &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
+            &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_SPCAE   &kp LALT    &kp LGUI   &kp RGUI &kp RALT  NUM_I                 &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
             >;
         };
 
