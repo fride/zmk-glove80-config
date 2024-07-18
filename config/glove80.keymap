@@ -11,6 +11,10 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#define my_tapping_term 380
+#define my_quick_tapping_term 112
+#define my_ak_delay 40
+
 &sl {  // sticky-layer config
     ignore-modifiers;          // allow chording sticky mods & layers
 };
