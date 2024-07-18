@@ -134,13 +134,34 @@
             global-quick-tap;
             bindings = <&FatArrow>, <&Arrow>;
         };
+        // see https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md
+        // Prev 	A 	B 	C 	D 	E 	F 	G 	H 	I 	J 	K 	L 	M 	N 	O 	P
+        // Magic 	O 	EFORE 	Y 	Y 	U 	-- 	Y 	-- 	ON 	UST 	S 	k 	ENT 	ION 	A 	Y																
+        // Prev 	Q 	R 	S 	T 	U 	V 	W 	X 	Y 	Z 	, 	. 	/ 	- 	= 	wspc
+        // Magic 	-- 	L 	K 	MENT 	E 	ER 	HICH 	ES 	P 	-- 	⎵BUT 	\ 	-- 	> 	>
         magic: the_magic_key {
             compatible = "zmk,behavior-antecedent-morph";
             label = "THE_MAGIC_KEY";
             #binding-cells = <0>;
 			defaults = <&kp N>;
-            bindings = <&kp O>, <&kp B>,<&kp Y>, <&kp Y>, <&kp U>, <&kp Y>, <&magic_on>;
-			antecedents = <A E C D E G I>;
+            bindings = <&kp O>
+                     , <&kp B>
+                     , <&kp Y>
+                     , <&kp Y>
+                     , <&kp U>
+                     , <&kp Y>
+                     , <&magic_on>
+                     , <&magic_ust>
+                     , <&kp S>
+                     , <&kp L>
+                     , <&kp M>
+                     , <&kp T>
+                     , <&kp A>
+                     , <&kp Y>
+                     , <&kp L>
+                     , <&kp K>;
+                     , <&kp E>;
+			antecedents = <A E C D E G I J J K L M O P R S U>;
 			max-delay-ms = <250>;
         };
     };
@@ -151,6 +172,13 @@
             tap-ms = <10>;
             bindings = <&kp O>
                     , <&kp N>;
+        )
+        ZMK_MACRO(magic_ust,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp U>
+                    , <&kp S>
+                    , <&kp T>;
         )
 
         ZMK_MACRO(FatArrow,
@@ -224,12 +252,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-            &kp F1         &kp F2          &kp F3      &kp F4      &kp F5                                                                                          &kp F6       &kp F7      &kp F8      &kp F9         &kp F10
-            &kp EQUAL      &kp N1          &kp N2      &kp N3      &kp N4      &kp N5                                                                     &kp N6   &kp N7       &kp N8      &kp N9      &kp N0         &kp MINUS
-            &kp TAB        &kp V           &kp M       &kp L       &kp C       &kp P                                                                      &kp B    &magic       &kp U       &kp O       &kp Q          &kp BSLH
-            &kp ESC        &lt SYMBOLS S   &kp T       &kp R       &hml LSFT D &kp Y                                                                      &kp F    &hmr LSFT N  &kp E       &kp A       &lt SYMBOLS I  &kp SQT
-            &kp GRAVE      &kp X           &kp K       &kp J       &kp G       &kp W   &kp LSHFT   &kp LCTRL   &kp LALT  &kp LGUI  &kp RCTRL &kp RSHFT    &kp Z    &kp H        &kp COMMA   &kp COMMA   &kp SEMI       &kp PG_UP
-            &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT           NAV_SPCAE   &kp DEL     &kp LALT   &kp RALT  &kp RET   NUM_I                &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
+            &kp F1         &kp F2          &kp F3      &kp F4      &kp F5                                                                                             &kp F6       &kp F7      &kp F8      &kp F9         &kp F10
+            &kp EQUAL      &kp N1          &kp N2      &kp N3      &kp N4         &kp N5                                                                     &kp N6   &kp N7       &kp N8      &kp N9      &kp N0         &kp MINUS
+            &kp TAB        &kp V           &kp M       &kp L       &kp C          &kp P                                                                      &kp B    &magic       &kp U       &kp O       &kp Q          &kp BSLH
+            &kp ESC        &lt SYMBOLS S   &kp T       &kp R       &hml LSFT D    &kp Y                                                                      &kp F    &hmr LSFT N  &kp E       &kp A       &lt SYMBOLS I  &kp SQT
+            &kp GRAVE      &kp X           &kp K       &kp J       &lt NUMBERS G  &kp W   &kp LSHFT   &kp LCTRL   &kp LALT  &kp LGUI  &kp RCTRL &kp RSHFT    &kp Z    &kp H        &kp COMMA   &kp COMMA   &kp SEMI       &kp PG_UP
+            &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_SPCAE   &kp DEL     &kp LALT   &kp RALT  &kp RET  &skq LSFT             &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
             >;
         };
 
