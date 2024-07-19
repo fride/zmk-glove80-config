@@ -202,7 +202,8 @@
                 , <&macro_release &kp RSHFT>
                 , <&macro_tap &kp H>
                 ;
-
+        )
+        
         ZMK_MACRO(magic_on,
             wait-ms = <10>;
             tap-ms = <10>;
