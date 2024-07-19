@@ -65,7 +65,7 @@
 #define NAV_SPCAE &lt NAVI SPACE
 #define NAV_R     &lt NAVI R
 #define NUM_SPC   &lt NUMBERS SPACE
-#define TH_UML    &th_uml UMLAUTS 0
+#define TH_UML    &th_uml UMLAUTS &th
 
 / {
 
@@ -143,7 +143,7 @@
 
         th_uml: th_uml {
             compatible = "zmk,behavior-hold-tap";
-            label = "ARROWS";
+            label = "TH_UMLUAT";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <120>;
