@@ -375,7 +375,7 @@
             bindings = <
             &kp F1         &kp F2          &kp F3      &kp F4      &kp F5                                                                                             &kp F6       &kp F7      &kp F8      &kp F9         &kp F10
             &kp EQUAL      &kp N1          &kp N2      &kp N3      &kp N4         &kp N5                                                                     &kp N6   &kp N7       &kp N8      &kp N9      &kp N0         &kp MINUS
-            &kp TAB        &kp V           &kp G       &kp L       &th            &kp P                                                                      &kp Q    U_UML        O_UML       &kp COMMA   &kp Z          &kp BSLH
+            &kp TAB        &kp V           &kp G       &kp L       &th            &kp P                                                                      &kp Q    &kp U        O_UML       &kp COMMA   &kp Z          &kp BSLH
             &kp ESC        &kp C           &kp S       &kp N       &kp T          &kp M                                                                      &kp K    &kp I        &kp E       A_UML       &kp H          &kp SQT
             &kp GRAVE      &kp X           &kp F       &kp W       &kp D          &kp B   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp J    &kp Y        &kp SQT     &kp DOT     &kp P          &kp PG_UP
             &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_R       &kp LALT    &kp LGUI   &kp RGUI &kp RALT  NUM_SPC               &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
