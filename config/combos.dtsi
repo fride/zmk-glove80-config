@@ -42,7 +42,7 @@ combos {
        COMBO_ANY(ESC,          &kp ESC,       37 38)
        COMBO_ANY(COLON,        &kp COLON,     41 42)
        COMBO_ANY(SLASH,        &kp SLASH,     31 32)
-       // COMBO_ANY(THETHE,        &th      ,     39 49)
+       COMBO_ANY(THETHE,        &th      ,     39 49)
 
        COMBO_ANY(combo_LSFT,    &skq LSFT,      36 37)
        COMBO_ANY(combo_RSFT,    &skq RSFT,      42 43)
