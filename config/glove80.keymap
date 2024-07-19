@@ -78,7 +78,7 @@
         msl: layer-tap-with-stick-layer {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <QUICK_TAP_TERM>;
+            tapping-term-ms = <my_quick_tapping_term>;
             flavor = "tap-preferred";
             quick-tap-ms = <0>;
             bindings = <&mo>, <&sl>;
@@ -86,7 +86,7 @@
         msk: layer-tap-with-stick-key {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <QUICK_TAP_TERM>;
+            tapping-term-ms = <my_quick_tapping_term>;
             flavor = "tap-preferred";
             quick-tap-ms = <0>;
             bindings = <&mo>, <&sk>;
@@ -94,7 +94,7 @@
         mst: layer-tap-with-tog-key {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <QUICK_TAP_TERM>;
+            tapping-term-ms = <my_quick_tapping_term>;
             flavor = "tap-preferred";
             quick-tap-ms = <0>;
             bindings = <&mo>, <&tog>;
