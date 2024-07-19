@@ -65,6 +65,7 @@
 #define NAV_SPCAE &lt NAVI SPACE
 #define NAV_R     &lt NAVI R
 #define NUM_SPC   &lt NUMBERS SPACE
+// this seems to not work as advertised!?
 #define TH_UML    &th_uml UMLAUTS 0
 
 / {
@@ -99,9 +100,6 @@
             quick-tap-ms = <0>;
             bindings = <&mo>, <&tog>;
         };
-
-
-
 
 
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
@@ -356,7 +354,7 @@
         l_umlaute {
             bindings = <
                 &trans            &trans              &trans          &trans          &trans                                                                                                           &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP  &none           &kp PAUSE_BREAK
-                &trans            &kp LA(U)           &kp LA(O)       &kp LA(A)       &trans          &kp HOME                                                                              &trans       &trans         &trans       &trans        &trans          &trans
+                &trans            &kp A(U)            &kp A(O )       &kp LA(A)       &trans          &kp HOME                                                                              &trans       &trans         &trans       &trans        &trans          &trans
                 &trans            &kp GRAVE           &kp EQUAL       &kp LA(S)       &kp UNDER       &kp STAR                                                                              &kp BSLH     &kp N4         &kp N5       &kp N6        &kp PLUS        &kp SLASH
                 &trans            &kp N7              &kp N5          &kp LSHFT       &hml LSFT N1    &kp PLUS                                                                              &kp COLON    &kp N4         &kp N5       &kp N6        &kp MINUS       &kp STAR
                 &trans            &kp LT              &kp COLON       &kp LSHFT       &trans          &kp CARET       &trans      &trans      &trans      &trans      &trans      &trans    &kp COMMA    &kp N1         &kp N2       &kp N3        &kp DOT         &trans
