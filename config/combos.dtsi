@@ -43,8 +43,8 @@ combos {
        COMBO_ANY(COLON,        &kp COLON,     41 42)
        COMBO_ANY(SLASH,        &kp SLASH,     31 32)
 
-       COMBO_ANY(combo_LSFT,    &skq LSFT,      35 36)
-       COMBO_ANY(combo_RSFT,    &skq RSFT,      43 44)
-       COMBO_ANY(combo_LCTL,    &skq LCTL,      23 24)
-       COMBO_ANY(combo_RCTL,    &skq RCTL,      31 32)
+       COMBO_ANY(combo_LSFT,    &skq LSFT,      36 37)
+       COMBO_ANY(combo_RSFT,    &skq RSFT,      42 43)
+       COMBO_ANY(combo_LCTL,    &skq LCTL,      24 25)
+       COMBO_ANY(combo_RCTL,    &skq RCTL,      30 31)
 };

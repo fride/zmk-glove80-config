@@ -65,13 +65,45 @@
 #define NAV_SPCAE &lt NAVI SPACE
 #define NAV_R     &lt NAVI R
 #define NUM_SPC   &lt NUMBERS SPACE
-#define TH_UML    &th_uml UMLAUTS &th
+#define TH_UML    &th_uml UMLAUTS 0
 
 / {
 
     #include "combos.dtsi"
     
     behaviors {
+
+        // ********************** CUSTOM HOLD TAPS ********************** //
+        // source: https://github.com/rafaelromao/keyboards/blob/main/src/zmk/features/thumbs.dtsi
+        msl: layer-tap-with-stick-layer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <QUICK_TAP_TERM>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&sl>;
+        };
+        msk: layer-tap-with-stick-key {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <QUICK_TAP_TERM>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&sk>;
+        };
+        mst: layer-tap-with-tog-key {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <QUICK_TAP_TERM>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&tog>;
+        };
+
+
+
+
+
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
         // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
         // layer_td: tap_dance_0 {
