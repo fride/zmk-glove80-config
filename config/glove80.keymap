@@ -57,6 +57,11 @@
 #define HYPER LC(LS(LG(LALT)))
 #define MEH LS(LC(LALT))
 
+// special chars
+#define U_UML lk_U_umlaut 0 U
+#define A_UML lk_A_umlaut 0 A
+#define O_UML lk_O_umlaut 0 O
+
 // special keys
 // I will never like this dsl! Why do I have to pass arguments where no arguments are used!?
 #define Arrows arrows 0 0
@@ -66,7 +71,7 @@
 #define NAV_R     &lt NAVI R
 #define NUM_SPC   &lt NUMBERS SPACE
 // this seems to not work as advertised!?
-#define TH_UML    &th_uml UMLAUTS 0
+#define TH_UML    &th_uml UMLAUTS 
 
 / {
 
@@ -100,6 +105,32 @@
             quick-tap-ms = <0>;
             bindings = <&mo>, <&tog>;
         };
+         
+         lk_U_umlaut: lk_U_umlaut { // ¨, ü on "linger"
+            compatible = "zmk,behavior-hold-tap";
+            label = "lk_U_umlaut";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_tapping_term>;
+            flavor = "tap-preferred";
+            bindings = <&typeUumlaut>, <&kp>;
+        };
+         lk_A_umlaut: lk_A_umlaut { // ¨, ü on "linger"
+            compatible = "zmk,behavior-hold-tap";
+            label = "lk_A_umlaut";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_tapping_term>;
+            flavor = "tap-preferred";
+            bindings = <&typeAumlaut>, <&kp>;
+        };
+         lk_O_umlaut: lk_O_umlaut { // ¨, ü on "linger"
+            compatible = "zmk,behavior-hold-tap";
+            label = "lk_O_umlaut";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_tapping_term>;
+            flavor = "tap-preferred";
+            bindings = <&typeOumlaut>, <&kp>;
+        };
+
 
 
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
@@ -171,15 +202,16 @@
             bindings = <&FatArrow>, <&Arrow>;
         };
 
-        th_uml: th_uml {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TH_UMLUAT";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <my_tapping_term>;
-            flavor = "balanced";
-            bindings = <&mo>, <&th>;
-        };
+        // Me no like!
+        // th_uml: th_uml {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "TH_UMLUAT";
+        //     #binding-cells = <2>;
+        //     flavor = "tap-preferred";
+        //     tapping-term-ms = <my_tapping_term>;
+        //     flavor = "balanced";
+        //     bindings = <&mo>, <&th>;
+        // };
 
         // see https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md
         // Prev 	A 	B 	C 	D 	E 	F 	G 	H 	I 	J 	K 	L 	M 	N 	O 	P
@@ -220,6 +252,27 @@
     };
 
     macros {
+
+        ZMK_MACRO(typeUumlaut,
+            wait-ms = <10>;
+            tap-ms =  <10>;
+            bindings = <&kp LA(U)>;
+        )
+        ZMK_MACRO(typeAumlaut,
+            wait-ms = <10>;
+            tap-ms =  <10>;
+            bindings = <&kp LA(A)>;
+        )
+        ZMK_MACRO(typeOumlaut,
+            wait-ms = <10>;
+            tap-ms =  <10>;
+            bindings = <&kp LA(O)>;
+        )
+        ZMK_MACRO(typeSZ,
+            wait-ms = <10>;
+            tap-ms =  <10>;
+            bindings = <&kp LA(S)>;
+        )
 
         ZMK_MACRO(th,
             wait-ms = <10>;
@@ -322,8 +375,8 @@
             bindings = <
             &kp F1         &kp F2          &kp F3      &kp F4      &kp F5                                                                                             &kp F6       &kp F7      &kp F8      &kp F9         &kp F10
             &kp EQUAL      &kp N1          &kp N2      &kp N3      &kp N4         &kp N5                                                                     &kp N6   &kp N7       &kp N8      &kp N9      &kp N0         &kp MINUS
-            &kp TAB        &kp V           &kp G       &kp L       &th            &kp P                                                                      &kp Q    &kp U        &kp O       &kp COMMA   &kp Z          &kp BSLH
-            &kp ESC        &kp C           &kp S       &kp N       &kp T          &kp M                                                                      &kp K    &kp I        &kp E       &kp A       &kp H          &kp SQT
+            &kp TAB        &kp V           &kp G       &kp L       &th            &kp P                                                                      &kp Q    U_UML        O_UML       &kp COMMA   &kp Z          &kp BSLH
+            &kp ESC        &kp C           &kp S       &kp N       &kp T          &kp M                                                                      &kp K    &kp I        &kp E       A_UML       &kp H          &kp SQT
             &kp GRAVE      &kp X           &kp F       &kp W       &kp D          &kp B   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp J    &kp Y        &kp SQT     &kp DOT     &kp P          &kp PG_UP
             &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_R       &kp LALT    &kp LGUI   &kp RGUI &kp RALT  NUM_SPC               &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
             >;
