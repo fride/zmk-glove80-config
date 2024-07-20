@@ -46,9 +46,9 @@ combos {
        COMBO_ANY(MINUS,        &kp MINUS,     60 61)
        
 
-       COMBO_LAYER(combo_ue,      &typeUumlaut,   29,30, 2)
-       COMBO_LAYER(combo_oe,      &typeAumlaut,   29,31, 2)
-       COMBO_LAYER(combo_ae,      &typeAumlaut,   29,43, 2)
+       COMBO_LAYER(combo_ue,      &typeUumlaut,   29 30, 0)
+       COMBO_LAYER(combo_oe,      &typeAumlaut,   29 31, 0)
+       COMBO_LAYER(combo_ae,      &typeAumlaut,   29 43, 0)
        
        COMBO_LAYER(combo_LSFT,    &skq LSFT,      36 37, 2)
        COMBO_LAYER(combo_RSFT,    &skq RSFT,      42 43, 2)
