@@ -39,6 +39,7 @@
 
 #define my_tapping_term 380
 #define my_quick_tapping_term 112
+#define umlaut_tapping_term 150
 #define my_ak_delay 40
 
 &sl {  // sticky-layer config
@@ -47,30 +48,32 @@
 
 // layers
 #define DEFAULT 0
-#define SYMBOLS 1
-#define NUMBERS 2
-#define NAVI    3
-#define MAGIC   4
+#define HANDS_DOWN  1
+#define SYMBOLS 2
+#define NUMBERS 3
+#define UMLAUTS 4
+#define NAVI    5
+#define MAGIC   6
 
 // modifiers
 #define HYPER LC(LS(LG(LALT)))
 #define MEH LS(LC(LALT))
 
+// special chars
+#define U_UML &lk_U_umlaut 0 U
+#define A_UML &lk_A_umlaut 0 A
+#define O_UML &lk_O_umlaut 0 O
+
 // special keys
 // I will never like this dsl! Why do I have to pass arguments where no arguments are used!?
 #define Arrows arrows 0 0
 
-// les thumbs
+// less thumbs
 #define NAV_SPCAE &lt NAVI SPACE
-#define NUM_I     &lt NUMBERS I
-
-
-#define COMBO_ANY(NAME, BINDINGS, KEYPOS) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    timeout-ms = <45>; \
-};
+#define NAV_R     &lt NAVI R
+#define NUM_SPC   &lt NUMBERS SPACE
+// this seems to not work as advertised!?
+#define TH_UML    &th_uml UMLAUTS 
 
 
 / {
@@ -78,6 +81,61 @@
     #include "combos.dtsi"
     
     behaviors {
+
+        // ********************** CUSTOM HOLD TAPS ********************** //
+        // source: https://github.com/rafaelromao/keyboards/blob/main/src/zmk/features/thumbs.dtsi
+        msl: layer-tap-with-stick-layer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_quick_tapping_term>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&sl>;
+        };
+        msk: layer-tap-with-stick-key {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_quick_tapping_term>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&sk>;
+        };
+        mst: layer-tap-with-tog-key {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_quick_tapping_term>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&tog>;
+        };
+         
+         lk_U_umlaut: lk_U_umlaut { // ¨, ü on "linger"
+            compatible = "zmk,behavior-hold-tap";
+            label = "lk_U_umlaut";
+            #binding-cells = <2>;
+            tapping-term-ms = <umlaut_tapping_term>;
+            flavor = "tap-preferred";
+            bindings = <&typeUumlaut>, <&kp>;
+        };
+         lk_A_umlaut: lk_A_umlaut { // ¨, ü on "linger"
+            compatible = "zmk,behavior-hold-tap";
+            label = "lk_A_umlaut";
+            #binding-cells = <2>;
+            tapping-term-ms = <umlaut_tapping_term>;
+            flavor = "tap-preferred";
+            bindings = <&typeAumlaut>, <&kp>;
+        };
+         lk_O_umlaut: lk_O_umlaut { // ¨, ü on "linger"
+            compatible = "zmk,behavior-hold-tap";
+            label = "lk_O_umlaut";
+            #binding-cells = <2>;
+            tapping-term-ms = <umlaut_tapping_term>;
+            flavor = "tap-preferred";
+            bindings = <&typeOumlaut>, <&kp>;
+        };
+
+
+
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
         // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
         // layer_td: tap_dance_0 {
@@ -146,6 +204,38 @@
             global-quick-tap;
             bindings = <&FatArrow>, <&Arrow>;
         };
+
+
+        ad_n: adaptive_n {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "ADAPTIVE_N";
+            #binding-cells = <0>;
+			defaults = <&kp N>;
+            bindings = <&kp H>, <&kp H>;
+            antecedents = <T C>;
+            max-delay-ms = <250>;
+        };
+        magic_th: the_magic_th_key {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "THE_MAGIC_TH_KEY";
+            #binding-cells = <0>;
+			defaults = <&th>;
+            bindings = <&ch>;
+            antecedents = <S>;
+            max-delay-ms = <250>;
+        };
+
+        // Me no like!
+        // th_uml: th_uml {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "TH_UMLUAT";
+        //     #binding-cells = <2>;
+        //     flavor = "tap-preferred";
+        //     tapping-term-ms = <my_tapping_term>;
+        //     flavor = "balanced";
+        //     bindings = <&mo>, <&th>;
+        // };
+
         // see https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md
         // Prev 	A 	B 	C 	D 	E 	F 	G 	H 	I 	J 	K 	L 	M 	N 	O 	P
         // Magic 	O 	EFORE 	Y 	Y 	U 	-- 	Y 	-- 	ON 	UST 	S 	k 	ENT 	ION 	A 	Y																
@@ -185,6 +275,46 @@
     };
 
     macros {
+
+        ZMK_MACRO(typeUumlaut,
+            wait-ms = <10>;
+            tap-ms =  <10>;
+            bindings = <&kp LA(U)>;
+        )
+        ZMK_MACRO(typeAumlaut,
+            wait-ms = <10>;
+            tap-ms =  <10>;
+            bindings = <&kp LA(A)>;
+        )
+        ZMK_MACRO(typeOumlaut,
+            wait-ms = <10>;
+            tap-ms =  <10>;
+            bindings = <&kp LA(O)>;
+        )
+        ZMK_MACRO(typeSZ,
+            wait-ms = <10>;
+            tap-ms =  <10>;
+            bindings = <&kp LA(S)>;
+        )
+
+        ZMK_MACRO(th,
+            wait-ms = <10>;
+            tap-ms =  <10>;
+            bindings = <&kp T>
+                    //  , <&macro_release &kp LSHFT>
+                    //  , <&macro_release &kp RSHFT>
+                     , <&kp H>;
+        )
+        ZMK_MACRO(ch,
+            wait-ms = <0>;
+            tap-ms = <40>;
+            bindings = <&macro_tap &kp C>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp H>
+                ;
+        )
+
         ZMK_MACRO(magic_on,
             wait-ms = <10>;
             tap-ms = <10>;
@@ -263,25 +393,8 @@
 
     keymap {
         compatible = "zmk,keymap";
-
-        default_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |                                                               |  F6   |  F7   |  F8  |   F9  |  F10 |
-            // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
-            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                                 |  Y   |   U   |   I   |  O   |   P   |   \  |
-            // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                                 |  H   |   J   |   K   |  L   |   ;   |   '  |
-            // |   `   |  Z  |  X  |  C   |  V   |  B   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  N   |   M   |   ,   |  .   |   /   | PGUP |
-            // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
-
-            bindings = <
-            &kp F1         &kp F2          &kp F3      &kp F4      &kp F5                                                                                             &kp F6       &kp F7      &kp F8      &kp F9         &kp F10
-            &kp EQUAL      &kp N1          &kp N2      &kp N3      &kp N4         &kp N5                                                                     &kp N6   &kp N7       &kp N8      &kp N9      &kp N0         &kp MINUS
-            &kp TAB        &kp V           &kp M       &kp L       &kp C          &kp P                                                                      &kp B    &magic       &kp U       &kp O       &kp Q          &kp BSLH
-            &kp ESC        &lt SYMBOLS S   &kp T       &kp R       &hml LSFT D    &kp Y                                                                      &kp F    &hmr LSFT N  &kp E       &kp A       &key_repeat    &kp SQT
-            &kp GRAVE      &kp X           &kp K       &kp J       &lt NUMBERS G  &kp W   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp Z    &kp H        &kp COMMA   &kp DOT     &kp SEMI       &kp PG_UP
-            &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_SPCAE   &kp LALT    &kp LGUI   &kp RGUI &kp RALT  NUM_I                 &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
-            >;
-        };
+        #include "layers/magic_sturdy.dtsi"
+        #include "layers/hands_down_ie_th.dtsi"
 
         l_sym {
             bindings = <
@@ -299,6 +412,16 @@
                 &trans            &trans              &trans          &trans          &trans                                                                                                           &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP  &none           &kp PAUSE_BREAK
                 &trans            &trans              &trans          &trans          &trans          &kp HOME                                                                              &trans       &trans         &trans       &trans        &trans          &trans
                 &trans            &kp GRAVE           &kp EQUAL       &kp MINUS       &kp UNDER       &kp STAR                                                                              &kp BSLH     &kp N4         &kp N5       &kp N6        &kp PLUS        &kp SLASH
+                &trans            &kp N7              &kp N5          &kp LSHFT       &hml LSFT N1    &kp PLUS                                                                              &kp COLON    &kp N4         &kp N5       &kp N6        &kp MINUS       &kp STAR
+                &trans            &kp LT              &kp COLON       &kp LSHFT       &trans          &kp CARET       &trans      &trans      &trans      &trans      &trans      &trans    &kp COMMA    &kp N1         &kp N2       &kp N3        &kp DOT         &trans
+                &trans            &trans              &trans          &trans          &trans                         &kp SPACE   &trans      &trans      &trans      &trans      &kp N0                 &trans         &trans       &trans        &trans          &trans
+            >;
+        };        
+        l_umlaute {
+            bindings = <
+                &trans            &trans              &trans          &trans          &trans                                                                                                           &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP  &none           &kp PAUSE_BREAK
+                &trans            &kp U               &kp O           &kp A           &trans          &kp HOME                                                                              &trans       &trans         &trans       &trans        &trans          &trans
+                &trans            &kp GRAVE           &kp EQUAL       &kp S           &kp UNDER       &kp STAR                                                                              &kp BSLH     &kp N4         &kp N5       &kp N6        &kp PLUS        &kp SLASH
                 &trans            &kp N7              &kp N5          &kp LSHFT       &hml LSFT N1    &kp PLUS                                                                              &kp COLON    &kp N4         &kp N5       &kp N6        &kp MINUS       &kp STAR
                 &trans            &kp LT              &kp COLON       &kp LSHFT       &trans          &kp CARET       &trans      &trans      &trans      &trans      &trans      &trans    &kp COMMA    &kp N1         &kp N2       &kp N3        &kp DOT         &trans
                 &trans            &trans              &trans          &trans          &trans                         &kp SPACE   &trans      &trans      &trans      &trans      &kp N0                 &trans         &trans       &trans        &trans          &trans

@@ -7,6 +7,26 @@ I need a layout for
 
 ** layouts
 
+** Current Layout: a modified Hands Down
+A  [[https://www.reddit.com/r/KeyboardLayouts/comments/1djzkv1/comment/l9onx07/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button][modified]] 
+    [[https://sites.google.com/alanreiser.com/handsdown][Hands Down]] layout where au and ie are easy would be nice. Seems like
+    #+BEGIN_SRC
+    v g l þ *  * u o , z
+    c s n t m  k i e a h
+    x f w d b  j y ' . p
+            r  ⎵
+    #+END_SRC
+
+    coild be nice. I should add some linger and some adaptive keys.
+    - `l þ` -> `ld`
+    - `y` -> `you` ? (Maybe but where to put home row mods!?)
+    - ` `a` -> `ä` (u,o,s the same)
+
+    I do not like to shoft with combos and the umlauts are not nice!
+** Experiments
+*** OPY
+    based on [[https://gitlab.com/voidyourwarranty/yackboard/-/blob/main/layout.md][this]] and [[https://opylayout.wordpress.com/2023/01/21/the-opy-layout/][that]]
+    Not for me!
 *** Magic Sturdy
     [[https://github.com/getreuer/qmk-keymap][Pascals version]].
     #+BEGIN_SRC
