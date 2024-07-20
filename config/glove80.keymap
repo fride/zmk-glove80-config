@@ -208,7 +208,7 @@
             label = "ADAPTIVE_N";
             #binding-cells = <0>;
 			defaults = <&kp N>;
-            bindings = <&kp H>, <&kpH>;
+            bindings = <&kp H>, <&kp H>;
             antecedents = <T C>;
         };
         // Me no like!
