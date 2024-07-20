@@ -210,15 +210,16 @@
 			defaults = <&kp N>;
             bindings = <&kp H>, <&kp H>;
             antecedents = <T C>;
+            max-delay-ms = <250>;
         };
         magic_th: the_magic_th_key {
             compatible = "zmk,behavior-antecedent-morph";
             label = "THE_MAGIC_KEY";
             #binding-cells = <0>;
 			defaults = <&th>;
-            bindings = <&ch>
-                     , ;
+            bindings = <&ch>;
             antecedents = <S>;
+            max-delay-ms = <250>;
         }
         // Me no like!
         // th_uml: th_uml {
@@ -390,7 +391,7 @@
         compatible = "zmk,keymap";
 
         #include "hands_down_ie_th.dtsi"
-        
+
         l_sym {
             bindings = <
                 &trans            &trans              &trans          &trans          &trans                                                                                                           &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP  &none           &kp PAUSE_BREAK
