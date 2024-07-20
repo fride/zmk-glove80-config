@@ -220,7 +220,8 @@
             bindings = <&ch>;
             antecedents = <S>;
             max-delay-ms = <250>;
-        }
+        };
+        
         // Me no like!
         // th_uml: th_uml {
         //     compatible = "zmk,behavior-hold-tap";
