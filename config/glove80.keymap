@@ -110,7 +110,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "lk_U_umlaut";
             #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
+            tapping-term-ms = <my_quick_tapping_term>;
             flavor = "tap-preferred";
             bindings = <&typeUumlaut>, <&kp>;
         };
@@ -118,7 +118,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "lk_A_umlaut";
             #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
+            tapping-term-ms = <my_quick_tapping_term>;
             flavor = "tap-preferred";
             bindings = <&typeAumlaut>, <&kp>;
         };
@@ -126,7 +126,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "lk_O_umlaut";
             #binding-cells = <2>;
-            tapping-term-ms = <my_tapping_term>;
+            tapping-term-ms = <my_quick_tapping_term>;
             flavor = "tap-preferred";
             bindings = <&typeOumlaut>, <&kp>;
         };
@@ -391,7 +391,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        #include "hands_down_ie_th.dtsi"
+        #include "layers/hands_down_ie_th.dtsi"
+        #include "layers/magic_sturdy.dtsi"
 
         l_sym {
             bindings = <
