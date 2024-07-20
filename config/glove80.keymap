@@ -48,7 +48,7 @@
 
 // layers
 #define DEFAULT 0
-#define STURDY  1
+#define HANDS_DOWN  1
 #define SYMBOLS 2
 #define NUMBERS 3
 #define UMLAUTS 4
@@ -392,9 +392,8 @@
 
     keymap {
         compatible = "zmk,keymap";
-
-        #include "layers/hands_down_ie_th.dtsi"
         #include "layers/magic_sturdy.dtsi"
+        #include "layers/hands_down_ie_th.dtsi"
 
         l_sym {
             bindings = <
