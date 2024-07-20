@@ -39,6 +39,7 @@
 
 #define my_tapping_term 380
 #define my_quick_tapping_term 112
+#define umlaut_tapping_term 150
 #define my_ak_delay 40
 
 &sl {  // sticky-layer config
@@ -47,11 +48,12 @@
 
 // layers
 #define DEFAULT 0
-#define SYMBOLS 1
-#define NUMBERS 2
-#define UMLAUTS 3
-#define NAVI    4
-#define MAGIC   5
+#define STURDY  1
+#define SYMBOLS 2
+#define NUMBERS 3
+#define UMLAUTS 4
+#define NAVI    5
+#define MAGIC   6
 
 // modifiers
 #define HYPER LC(LS(LG(LALT)))
@@ -110,7 +112,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "lk_U_umlaut";
             #binding-cells = <2>;
-            tapping-term-ms = <my_quick_tapping_term>;
+            tapping-term-ms = <umlaut_tapping_term>;
             flavor = "tap-preferred";
             bindings = <&typeUumlaut>, <&kp>;
         };
@@ -118,7 +120,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "lk_A_umlaut";
             #binding-cells = <2>;
-            tapping-term-ms = <my_quick_tapping_term>;
+            tapping-term-ms = <umlaut_tapping_term>;
             flavor = "tap-preferred";
             bindings = <&typeAumlaut>, <&kp>;
         };
@@ -126,7 +128,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "lk_O_umlaut";
             #binding-cells = <2>;
-            tapping-term-ms = <my_quick_tapping_term>;
+            tapping-term-ms = <umlaut_tapping_term>;
             flavor = "tap-preferred";
             bindings = <&typeOumlaut>, <&kp>;
         };

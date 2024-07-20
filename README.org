@@ -22,6 +22,7 @@ A  [[https://www.reddit.com/r/KeyboardLayouts/comments/1djzkv1/comment/l9onx07/?
     - `y` -> `you` ? (Maybe but where to put home row mods!?)
     - ` `a` -> `ä` (u,o,s the same)
 
+    I do not like to shoft with combos and the umlauts are not nice!
 ** Experiments
 *** OPY
     based on [[https://gitlab.com/voidyourwarranty/yackboard/-/blob/main/layout.md][this]] and [[https://opylayout.wordpress.com/2023/01/21/the-opy-layout/][that]]
