@@ -214,14 +214,14 @@
         };
         magic_th: the_magic_th_key {
             compatible = "zmk,behavior-antecedent-morph";
-            label = "THE_MAGIC_KEY";
+            label = "THE_MAGIC_TH_KEY";
             #binding-cells = <0>;
 			defaults = <&th>;
             bindings = <&ch>;
             antecedents = <S>;
             max-delay-ms = <250>;
         };
-        
+
         // Me no like!
         // th_uml: th_uml {
         //     compatible = "zmk,behavior-hold-tap";
