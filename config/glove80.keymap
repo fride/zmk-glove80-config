@@ -73,13 +73,23 @@
 #define NAV_R     &lt NAVI R
 #define NUM_SPC   &lt NUMBERS SPACE
 // this seems to not work as advertised!?
-#define TH_UML    &th_uml UMLAUTS 
+#define TH_UML    &th_uml UMLAUTS
 #define NUM_SFT     &lst NUMBERS LSFT
+
+#define SYM_L &sl SYMBOLS
+#define NAV_L &sl NAVI
+
 
 / {
 
     #include "combos.dtsi"
-    
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <SYMBOLS NAVI>;
+            then-layer = <NUMBERS>;
+        };
+    };
     behaviors {
 
         app_swap: app_swapper {
@@ -142,7 +152,7 @@
             quick-tap-ms = <0>;
             bindings = <&mo>, <&tog>;
         };
-         
+
          lk_U_umlaut: lk_U_umlaut { // ¨, ü on "linger"
             compatible = "zmk,behavior-hold-tap";
             label = "lk_U_umlaut";
@@ -272,7 +282,7 @@
 
         // see https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md
         // Prev 	A 	B 	C 	D 	E 	F 	G 	H 	I 	J 	K 	L 	M 	N 	O 	P
-        // Magic 	O 	EFORE 	Y 	Y 	U 	-- 	Y 	-- 	ON 	UST 	S 	k 	ENT 	ION 	A 	Y																
+        // Magic 	O 	EFORE 	Y 	Y 	U 	-- 	Y 	-- 	ON 	UST 	S 	k 	ENT 	ION 	A 	Y
         // Prev 	Q 	R 	S 	T 	U 	V 	W 	X 	Y 	Z 	, 	. 	/ 	- 	= 	wspc
         // Magic 	-- 	L 	K 	MENT 	E 	ER 	HICH 	ES 	P 	-- 	⎵BUT 	\ 	-- 	> 	>
         magic: the_magic_key {
@@ -365,7 +375,7 @@
         ZMK_MACRO(magic_er,
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&kp E>                    
+            bindings = <&kp E>
                     , <&kp R>;
         )
 
@@ -461,7 +471,7 @@
         //         &trans            &trans              &trans          &kp LGUI        &none           &kp CARET       &trans      &trans      &trans      &trans      &trans      &trans    &kp COMMA    &kp N1         &kp N2       &kp N3        &kp DOT         &trans
         //         &trans            &trans              &trans          &trans          &trans                         &kp SPACE   &trans      &trans       &kp LT      &kp GT      &kp N0                 &trans         &trans       &trans        &trans          &trans
         //     >;
-        // };        
+        // };
         l_umlaute {
             bindings = <
                 &trans            &trans              &trans          &trans          &trans                                                                                                           &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP  &none           &kp PAUSE_BREAK
@@ -471,7 +481,7 @@
                 &trans            &kp LT              &kp COLON       &kp LSHFT       &trans          &kp CARET       &trans      &trans      &trans      &trans      &trans      &trans    &kp COMMA    &kp N1         &kp N2       &kp N3        &kp DOT         &trans
                 &trans            &trans              &trans          &trans          &trans                         &kp SPACE   &trans      &trans      &trans      &trans      &kp N0                 &trans         &trans       &trans        &trans          &trans
             >;
-        };        
+        };
 
         l_nav {
             bindings = <
@@ -483,7 +493,7 @@
                 &trans            &kp CAPS            &kp INS         &kp F11         &kp F12                         &none      &trans      &trans      &trans      &trans      &trans                 &kp KP_N0    &kp KP_N0    &kp KP_DOT    &kp KP_ENTER    &trans
             >;
         };
-     
+
 
         magic_layer {
             bindings = <
