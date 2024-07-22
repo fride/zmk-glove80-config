@@ -1,4 +1,4 @@
-magic_sturdy {
+numword {
     bindings = <
         &trans        &trans          &trans           &trans           &trans                                                                                                     &trans       &trans       &trans      &trans      &trans
         &trans        &trans          &trans           &trans           &trans        &trans                                                                          &trans       &trans       &trans       &trans      &trans      &trans
