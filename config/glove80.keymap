@@ -451,7 +451,7 @@
                 &trans            &trans              &kp LT          &kp GT          &kp BSLH        &kp GRAVE                                                                             &kp AMPS     &Arrows     &kp LBKT     &kp RBKT      &trans          &trans
                 &trans            &kp EXCL            &kp MINUS       &kp PLUS        &kp EQUAL       &kp HASH                                                                              &kp PIPE     &kp COLON    &kp LPAR     &kp RPAR      &kp PERCENT     &trans
                 &trans            &trans              &kp SLASH       &kp STAR        &kp CARET       &trans          &trans      &trans      &trans      &trans      &trans      &trans    &kp TILDE    &kp DLLR     &kp LBRC     &kp RBRC      &trans          &trans
-                &trans            &trans              &trans          &trans          &trans                          &trans      &trans      &trans      &trans      &trans      &trans                 &kp KP_N0    &kp KP_N0    &kp KP_DOT    &kp KP_ENTER    &trans
+                &trans            &trans              &trans          &trans          &trans                          &trans      NAV_L      &trans      &trans      &trans      &trans                 &kp KP_N0    &kp KP_N0    &kp KP_DOT    &kp KP_ENTER    &trans
             >;
         };
 
@@ -483,8 +483,8 @@
                 &trans            &trans              &trans          &trans          &trans          &kp HOME                                                                              &kp LPAR     &kp KP_NUM   &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp PSCRN
                 &trans            &kp ESC             &none           &kp UP          &none           &kp END                                                                               &kp RPAR     &kp BSPC     &kp UP        &kp DEL      &kp SLCK        &none
                 &trans            &sk LSFT            &sk LCTRL       &sk LALT        &sk LGUI        &sk HYPER                                                                             &kp PRCNT    &kp LEFT     &kp DOWN     &kp RIGHT     &kp RIGHT       &none
-                &trans            &kp K_CMENU         &none           &kp F11         &app_swap      &win_swap         &none        &trans      &to DEFAULT &trans      &trans      &trans    &kp COMMA    &kp KP_N1    &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &trans
-                &trans            &kp CAPS            &kp INS         &kp F11         &kp F12                         &none      &trans      &trans      &trans      &trans      &trans                 &kp KP_N0    &kp KP_N0    &kp KP_DOT    &kp KP_ENTER    &trans
+                &trans            &kp K_CMENU         &none           &kp F11         &app_swap      &win_swap         &none      &trans      &to DEFAULT &trans      &trans      &trans    &kp COMMA    &kp KP_N1    &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &trans
+                &trans            &kp CAPS            &kp INS         &kp F11         &kp F12                          &none      NAV_L      &trans      &trans      SYM_L      &trans                 &kp KP_N0    &kp KP_N0    &kp KP_DOT    &kp KP_ENTER    &trans
             >;
         };
 
