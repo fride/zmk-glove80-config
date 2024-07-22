@@ -82,16 +82,16 @@
     
     behaviors {
 
-        app_swap: swapper {
+        app_swap: app_swapper {
             compatible = "zmk,behavior-tri-state";
-            label = "SWAPPER";
+            label = "app_swapper";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
             ignored-key-positions = <30 41 42 43>;
         };
-        win_swap: swapper {
+        win_swap: win_swapper {
             compatible = "zmk,behavior-tri-state";
-            label = "SWAPPER";
+            label = "win_swapper";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp GRAVE>, <&kt LGUI>;
             ignored-key-positions = <>;
