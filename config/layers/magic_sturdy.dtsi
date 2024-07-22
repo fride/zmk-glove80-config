@@ -3,8 +3,8 @@ magic_sturdy {
         &to 1          &kp F2          &kp F3      &kp F4      &kp F5                                                                                             &kp F6       &kp F7       &kp F8      &kp F9         &kp F10
         &kp EQUAL      &kp N1          &kp N2      &kp LEFT    &kp RIGHT      &kp N5                                                                     &kp HOME &kp UP       &kp DOWN     &kp END      &kp N0         &kp MINUS
         &kp TAB        &kp V           &kp M       &hmr RALT L &kp C          &kp P                                                                      &kp B    &magic       &hmr RALT U  &kp O       &kp Q          &kp SLASH
-        &kp ESC        &lt SYMBOLS S   &hml LCTL T &hml LALT R &hml LGUI D    &kp Y                                                                      &kp F    &hmr LGUI N  &hmr LALT E  &hmr RCTL A &lt SYMBOLS I  &kp SQT
+        &kp ESC        &hml LSFT S     &hml LCTL T &hml LALT R &hml LGUI D    &kp Y                                                                      &kp F    &hmr LGUI N  &hmr LALT E  &hmr RCTL A &hmr RSFT I    &kp SQT
         &kp GRAVE      &kp X           &kp K       &kp J       &lt NUMBERS G  &kp W   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp Z    &kp H        &kp COMMA    &kp DOT     &kp SEMI       &kp PG_UP
-        &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_SPCAE   &kp MINUS   &kp LGUI   &kp RGUI &num_word &skq LSFT             &kp UP       &kp DOWN     &kp LBKT    &kp RBKT       &mo MAGIC
+        &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_SPCAE   &kp MINUS   &kp LGUI   &kp RGUI &num_word NUM_SFT               &kp UP       &kp DOWN     &kp LBKT    &kp RBKT       &mo MAGIC
     >;
 };

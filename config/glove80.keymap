@@ -74,13 +74,23 @@
 #define NUM_SPC   &lt NUMBERS SPACE
 // this seems to not work as advertised!?
 #define TH_UML    &th_uml UMLAUTS 
-
+#define NUM_SFT     &lst NUMBERS LSFT
 
 / {
 
     #include "combos.dtsi"
     
     behaviors {
+
+        lst: layer_sticky_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_STICKY_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&sk>;
+        };
 
         // See https://github.com/dhruvinsh/zmk-num-word
         num_word: num_word {
