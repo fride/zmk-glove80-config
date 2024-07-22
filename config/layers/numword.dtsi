@@ -1,0 +1,10 @@
+numword {
+    bindings = <
+        &trans        &trans          &trans           &trans           &trans                                                                                                          &trans           &trans           &trans          &trans              &trans
+        &trans        &trans          &trans           &trans           &trans        &trans                                                                          &trans            &trans           &trans           &trans          &trans               &trans
+        &trans        &kp N7          &kp N7           &kp N8           &kp N9        &kp STAR                                                                        &kp BSLH          &kp HASH         &kp AMPS         &kp PIPE        &kp TILDE            &trans
+        &trans        &hml LSFT SEMI  &hml LALT N4     &hml LGUI N5     &kp N6        &hml HYPER PLUS                                                                 &hmr HYPER CARET  &hmr RSHFT MINUS &hmr RCTRL UNDER &hmr RALT EQUAL &hmr RGUI DOLLAR     &trans
+        &trans        &kp LT          &kp N1           &kp N2           &hmr MEH N3   &kp AT   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL        &trans            &hmr MEH COLON    &kp PERCENT      &trans          &kp GT               &trans
+        &trans        &trans          &trans           &trans           &trans                 &kp N0      &kp SPACE   &kp LGUI   &kp RGUI &key_repeat &skq LSFT                        &trans           &trans           &trans          &trans               &trans
+    >;
+};
