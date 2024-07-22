@@ -1,0 +1,11 @@
+l_nav {
+        bindings = <
+            &trans    &trans              &trans          &trans          &trans                                                                                                            &trans           &trans           &trans          &trans          &trans
+            &trans    &trans              &trans          &trans          &trans          &trans                                                                               &trans       &trans           &trans           &trans          &trans          &trans
+            &trans    &kp ESC             &none           &none           COPY_PASTE      &trans                                                                               &kp RPAR     &kp BSPC         &kp UP           &kp DEL         &kp SLCK        &none
+            &trans    &sk LSFT            &sk LCTRL       &sk LALT        &sk LGUI        &sk HYPER                                                                            &kp HOME     &kp LEFT         &kp DOWN         &kp RIGHT       &kp END         &none
+            &trans    &none               &none           &none           &app_swap       &win_swap       &none      &trans      &to DEFAULT &trans      &trans      &trans    &kp F19      &kp LBKT         &kp RBKT         &kp S(LBKT)     &kp S(LBKT)     &trans
+            &trans    &trans              &trans          &trans          &trans                          &none      &trans      &trans      &trans      &trans      &kp SPACE              &trans           &trans           &trans          &trans          &trans
+        >;
+    };
+    
