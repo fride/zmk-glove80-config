@@ -1,10 +1,10 @@
 numword {
     bindings = <
-        &trans        &trans          &trans           &trans           &trans                                                                                                     &trans       &trans       &trans      &trans      &trans
-        &trans        &trans          &trans           &trans           &trans        &trans                                                                          &trans       &trans       &trans       &trans      &trans      &trans
-        &trans        &trans          &trans           &trans           &kp G         &trans                                                                          &trans       &magic       &trans       &trans      &trans      &trans
-        &trans        &kp N7          &kp N5           &kp N3           &kp N1        &none                                                                           &kp F        &kp N0       &kp N2       &kp N4      &kp N6      &trans
-        &trans        &trans          &kp K            &kp J            &kp N9        &trans   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL        &kp Z        &kp N8       &kp COMMA    &kp DOT     &kp SEMI    &trans
-        &trans        &trans          &trans           &trans           &trans                 &kp SPACE   &kp MINUS   &kp LGUI   &kp RGUI &key_repeat &skq LSFT                   &trans       &trans       &trans      &trans      &trans
+        &trans        &trans          &trans           &trans           &trans                                                                                                     &trans           &trans           &trans          &trans              &trans
+        &trans        &trans          &trans           &trans           &trans        &trans                                                                          &trans       &trans           &trans           &trans          &trans               &trans
+        &trans        &kp N7          &kp N7           &kp N8           &kp N9        &kp STAR                                                                        &kp BSLH     &kp HASH         &kp AMPS         &kp PIPE        &kp TILDE            &trans
+        &trans        &hml LSFT SEMI  &hml LALT N4     &hml LGUI N5     &kp N6        &kp PLUS                                                                        &kp CARET    &hmr RSHFT MINUS &hmr RCTRL UNDER &hmr RALT EQUAL &hmr RGUI DOLLAR     &trans
+        &trans        &kp LT          &kp N1           &kp N2           &kp N3        &kp AT   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL        &trans       &kp COLON        &kp PERCENT      &trans          &kp GT               &trans
+        &trans        &trans          &trans           &trans           &trans                 &kp N0      &kp SPACE   &kp LGUI   &kp RGUI &key_repeat &skq LSFT                   &trans           &trans           &trans          &trans               &trans
     >;
 };

@@ -72,6 +72,7 @@ is awsome. I loved on [[QMK]] and there is a ZMK [[https://github.com/dhruvinsh/
 - [[Antecedent Morph Example][https://github.com/MikeSE314/zmk-config]]
 - [[https://github.com/getreuer/qmk-keymap][Pascal Getreuer]]
 - [[https://colemaq.github.io/variants.htm][Colemaq]]
+- Bredfields [[https://github.com/bredfield/zmk-config/tree/main][ZMK config]]
 - [[Reiners small thingy](https://github.com/reinier/rlkeymaps)
 - [[Ben Valek](https://configure.zsa.io/voyager/layouts/7qMvx/latest/0)
 - [[Zilp Zalp](https://github.com/kilipan/zilpzalp/tree/main/example_keymaps)
