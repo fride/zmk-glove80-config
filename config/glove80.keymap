@@ -82,6 +82,14 @@
     
     behaviors {
 
+        // See https://github.com/dhruvinsh/zmk-num-word
+        num_word: num_word {
+            #binding-cells = <0>;
+            compatible = "zmk,behavior-num-word";
+            continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+            ignore-numbers;
+        };
+
         // ********************** CUSTOM HOLD TAPS ********************** //
         // source: https://github.com/rafaelromao/keyboards/blob/main/src/zmk/features/thumbs.dtsi
         msl: layer-tap-with-stick-layer {
@@ -384,6 +392,16 @@
             wait-ms = <50>;
             tap-ms = <20>;
             bindings  = <&macro_press &kp LGUI>
+                      , <&macro_tap &kp TAB>
+                      , <&macro_pause_for_release>
+                      , <&macro_release &kp LGUI>
+            ;
+        )
+        ZMK_MACRO(winchoose,
+            wait-ms = <50>;
+            tap-ms = <20>;
+            bindings  = <&macro_press &kp LGUI>
+                      , <&macro_tap &kp TAB>
                       , <&macro_tap &kp TAB>
                       , <&macro_pause_for_release>
                       , <&macro_release &kp LGUI>

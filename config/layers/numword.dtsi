@@ -1,0 +1,10 @@
+magic_sturdy {
+    bindings = <
+        &trans        &trans          &trans           &trans           &trans                                                                                                     &trans       &trans       &trans      &trans      &trans
+        &trans        &trans          &trans           &trans           &trans        &trans                                                                          &trans       &trans       &trans       &trans      &trans      &trans
+        &trans        &trans          &trans           &trans           &kp G         &trans                                                                          &trans       &magic       &trans       &trans      &trans      &trans
+        &trans        &kp N7          &kp N5           &kp N3           &kp N1        &none                                                                           &kp F        &kp N0       &kp N2       &kp N4      &kp N6      &trans
+        &trans        &trans          &kp K            &kp J            &kp N9        &trans   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL        &kp Z        &kp N8       &kp COMMA    &kp DOT     &kp SEMI    &trans
+        &trans        &trans          &trans           &trans           &trans                 &kp SPACE   &kp MINUS   &kp LGUI   &kp RGUI &key_repeat &skq LSFT                   &trans       &trans       &trans      &trans      &trans
+    >;
+};

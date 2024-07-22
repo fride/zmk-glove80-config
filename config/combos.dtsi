@@ -36,6 +36,8 @@
 combos {
     compatible = "zmk,combos";
 
+       COMBO_ANY(NUMWORD,      &num_word,     69 74)
+       COMBO_ANY(WINCHOOSE,    &winchoose,    24 25 26)
        COMBO_ANY(TAB,          &kp TAB,       36 37 38)
        COMBO_ANY(ENTER,        &kp ENTER,     41 42 43)
 
@@ -54,4 +56,6 @@ combos {
        COMBO_LAYER(combo_RSFT,    &skq RSFT,      42 43, 2)
        COMBO_LAYER(combo_LCTL,    &skq LCTL,      24 25, 2)
        COMBO_LAYER(combo_RCTL,    &skq RCTL,      30 31, 2)
+
+       // combos alah Jonas
 };

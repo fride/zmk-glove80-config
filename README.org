@@ -45,6 +45,13 @@ A  [[https://www.reddit.com/r/KeyboardLayouts/comments/1djzkv1/comment/l9onx07/?
 
     I need to find a solution for ei an ie as it is both a very common bigrams in German.
     An alternative could be the [[https://oxey.dev/dhorf/index.html][Dhorf layout]].
+*** Beakl 19
+Could be nice?!
+    #+BEGIN_SRC
+    q . o u j  w d n m , 
+    h a e i k  g s r t p 
+    z ' / y x  b c l f v 
+    #+END_SRC
 
 * Thumb Shift or Thumb Alpha?
 I need to decide on it and I need to find out which key to put on it?
@@ -52,6 +59,9 @@ I need to decide on it and I need to find out which key to put on it?
 * Magic and stuff
 I use the [[https://github.com/klausweiss/zmk/blob/fix/adaptive-keys/docs/docs/behaviors/antecedent-morph.md][Antecedent Morph]] to emove some silly 
 patterns.
+
+** Numwords
+is awsome. I loved on [[QMK]] and there is a ZMK [[https://github.com/dhruvinsh/zmk-num-word][port]]
 
 ** Magic on a Thumb.
  in [[https://github.com/joa/graphite][joa's graphite]] layout he uses a thumb for shift on hold and magic on tap. This could
