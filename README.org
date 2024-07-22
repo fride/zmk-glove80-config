@@ -63,6 +63,9 @@ patterns.
 ** Numwords
 is awsome. I loved on [[QMK]] and there is a ZMK [[https://github.com/dhruvinsh/zmk-num-word][port]]
 
+** Tri-State for Swapping.
+see [[https://github.com/dhruvinsh/zmk-tri-state][this]] [[Github]] repository.
+
 ** Magic on a Thumb.
  in [[https://github.com/joa/graphite][joa's graphite]] layout he uses a thumb for shift on hold and magic on tap. This could
  be an option too.
