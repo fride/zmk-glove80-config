@@ -87,6 +87,7 @@
             #binding-cells = <0>;
             compatible = "zmk,behavior-num-word";
             continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+            layers = <NUMBERS>;
             ignore-numbers;
         };
 
@@ -425,16 +426,17 @@
             >;
         };
 
-        l_num {
-            bindings = <
-                &trans            &trans              &trans          &trans          &trans                                                                                                           &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP  &none           &kp PAUSE_BREAK
-                &trans            &trans              &trans          &trans          &trans          &kp HOME                                                                              &trans       &trans         &trans       &trans        &trans          &trans
-                &trans            &trans              &trans          &trans          &none           &kp STAR                                                                              &kp BSLH     &kp N7         &kp N8       &kp N9        &kp PLUS        &kp SLASH
-                &trans            &kp LSFT            &kp LCTL        &kp LALT        &none           &kp PLUS                                                                              &kp COLON    &kp N4         &kp N5       &kp N6        &kp MINUS       &kp STAR
-                &trans            &trans              &trans          &kp LGUI        &none           &kp CARET       &trans      &trans      &trans      &trans      &trans      &trans    &kp COMMA    &kp N1         &kp N2       &kp N3        &kp DOT         &trans
-                &trans            &trans              &trans          &trans          &trans                         &kp SPACE   &trans      &trans       &kp LT      &kp GT      &kp N0                 &trans         &trans       &trans        &trans          &trans
-            >;
-        };        
+        #include "layers/numrow.dtsi"
+        // l_num {
+        //     bindings = <
+        //         &trans            &trans              &trans          &trans          &trans                                                                                                           &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP  &none           &kp PAUSE_BREAK
+        //         &trans            &trans              &trans          &trans          &trans          &kp HOME                                                                              &trans       &trans         &trans       &trans        &trans          &trans
+        //         &trans            &trans              &trans          &trans          &none           &kp STAR                                                                              &kp BSLH     &kp N7         &kp N8       &kp N9        &kp PLUS        &kp SLASH
+        //         &trans            &kp LSFT            &kp LCTL        &kp LALT        &none           &kp PLUS                                                                              &kp COLON    &kp N4         &kp N5       &kp N6        &kp MINUS       &kp STAR
+        //         &trans            &trans              &trans          &kp LGUI        &none           &kp CARET       &trans      &trans      &trans      &trans      &trans      &trans    &kp COMMA    &kp N1         &kp N2       &kp N3        &kp DOT         &trans
+        //         &trans            &trans              &trans          &trans          &trans                         &kp SPACE   &trans      &trans       &kp LT      &kp GT      &kp N0                 &trans         &trans       &trans        &trans          &trans
+        //     >;
+        // };        
         l_umlaute {
             bindings = <
                 &trans            &trans              &trans          &trans          &trans                                                                                                           &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP  &none           &kp PAUSE_BREAK
