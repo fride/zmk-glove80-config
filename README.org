@@ -68,6 +68,7 @@ is awsome. I loved on [[QMK]] and there is a ZMK [[https://github.com/dhruvinsh/
  be an option too.
 
 * Sources and Inspirations
+- [[https://www.jonashietala.se/blog/2022/08/28/the_t-342_keyboard_layout/][The T34]] layout.
 - [[Antecedent Morph Example][https://github.com/MikeSE314/zmk-config]]
 - [[https://github.com/getreuer/qmk-keymap][Pascal Getreuer]]
 - [[https://colemaq.github.io/variants.htm][Colemaq]]
