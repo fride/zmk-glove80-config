@@ -48,6 +48,8 @@ combos {
        COMBO_ANY(MINUS,        &kp MINUS,     60 61)
        
 
+        COMBO_ANY(grave,    &kp GRAVE,        49 50)
+
        COMBO_LAYER(combo_ue,      &typeUumlaut,   29 30, 0)
        COMBO_LAYER(combo_oe,      &typeOumlaut,   29 31, 0)
        COMBO_LAYER(combo_ae,      &typeAumlaut,   29 43, 0)
@@ -57,5 +59,15 @@ combos {
        COMBO_LAYER(combo_LCTL,    &skq LCTL,      24 25, 2)
        COMBO_LAYER(combo_RCTL,    &skq RCTL,      30 31, 2)
 
-       // combos alah Jonas
+       // Klammern als Combos.
+           // brackets       
+      COMBO_ANY(lbkt,     &kp LBKT,      24 36)
+      COMBO_ANY(lpar,     &kp LPAR,      25 37)
+      COMBO_ANY(lbrc,     &kp LBRC,      26 38)
+      COMBO_ANY(lt,       &kp LT,        27 39)
+
+      COMBO_ANY(gt,       &kp GT,        28 40)
+      COMBO_ANY(rbrc,     &kp RBRC,      29 41)
+      COMBO_ANY(rpar,     &kp RPAR,      30 42)
+      COMBO_ANY(rbkt,     &kp RBKT,      31 43)
 };
