@@ -68,7 +68,7 @@
 #define Arrows arrows 0 0
 
 // less thumbs
-#define SYM_L &msl SYMBOLS
+#define SYM_L &msl SYMBOLS SYMBOLS
 #define NAV_L &msl NAVI NAVI
 
 
