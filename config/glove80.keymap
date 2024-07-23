@@ -84,6 +84,13 @@
 
     #include "combos.dtsi"
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <SYMBOLS NAVI>;
+            then-layer = <NUMBERS>;
+        };
+    };
     behaviors {
 
         app_swap: app_swapper {
