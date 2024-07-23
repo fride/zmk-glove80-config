@@ -263,17 +263,6 @@
             max-delay-ms = <250>;
         };
 
-        // Me no like!
-        // th_uml: th_uml {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "TH_UMLUAT";
-        //     #binding-cells = <2>;
-        //     flavor = "tap-preferred";
-        //     tapping-term-ms = <my_tapping_term>;
-        //     flavor = "balanced";
-        //     bindings = <&mo>, <&th>;
-        // };
-
         // see https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md
         // Prev 	A 	B 	C 	D 	E 	F 	G 	H 	I 	J 	K 	L 	M 	N 	O 	P
         // Magic 	O 	EFORE 	Y 	Y 	U 	-- 	Y 	-- 	ON 	UST 	S 	k 	ENT 	ION 	A 	Y
