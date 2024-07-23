@@ -37,6 +37,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <behaviors/num_word.dtsi>
+
 #define my_tapping_term 380
 #define my_quick_tapping_term 112
 #define umlaut_tapping_term 150
@@ -67,15 +68,8 @@
 #define Arrows arrows 0 0
 
 // less thumbs
-#define NAV_SPCAE &lt NAVI SPACE
-#define NAV_R     &lt NAVI R
-#define NUM_SPC   &lt NUMBERS SPACE
-// this seems to not work as advertised!?
-#define TH_UML    &th_uml UMLAUTS
-#define NUM_SFT     &lst NUMBERS LSFT
-
-#define SYM_L &sl SYMBOLS
-#define NAV_L &sl NAVI
+#define SYM_L &msl SYMBOLS
+#define NAV_L &msl NAVI NAVI
 
 
 / {
