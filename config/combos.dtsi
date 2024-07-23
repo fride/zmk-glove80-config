@@ -37,7 +37,6 @@ combos {
     compatible = "zmk,combos";
 
        COMBO_ANY(NUMWORD,      &num_word,     69 74)
-       COMBO_ANY(WINCHOOSE,    &winchoose,    24 25 26)
        COMBO_ANY(TAB,          &kp TAB,       36 37 38)
        COMBO_ANY(ENTER,        &kp ENTER,     41 42 43)
 
