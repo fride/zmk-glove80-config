@@ -1,0 +1,10 @@
+l_nav {
+    bindings = <
+        &kp C_BRI_DN      &kp C_BRI_UP        &kp C_PREV      &kp C_NEXT      &kp C_PP                                                                                                           &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP  &trans          &kp PAUSE_BREAK
+        &trans            &trans              &trans          &trans          &trans          &kp HOME                                                                              &kp LPAR     &kp KP_NUM   &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp PSCRN
+        &trans            &kp ESC             &none           &kp UP          &none           &kp END                                                                               &kp RPAR     &kp BSPC     &kp UP        &kp DEL      &kp SLCK        &none
+        &trans            &sk LSFT            &sk LCTRL       &sk LALT        &sk LGUI        &sk HYPER                                                                             &kp PRCNT    &kp LEFT     &kp DOWN     &kp RIGHT     &kp RIGHT       &none
+        &trans            &kp K_CMENU         &none           &kp F11         &app_swap      &win_swap         &none      &trans      &to DEFAULT &trans      &trans      &trans    &kp COMMA    &kp KP_N1    &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &trans
+        &trans            &kp CAPS            &kp INS         &kp F11         &kp F12                          &none      NAV_L      &trans      &trans      SYM_L      &trans                 &kp KP_N0    &kp KP_N0    &kp KP_DOT    &kp KP_ENTER    &trans
+    >;
+};
