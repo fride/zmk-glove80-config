@@ -20,6 +20,13 @@
         tap-ms =  <10>;
         bindings = <&kp LA(S)>;
     )
+    ZMK_MACRO(typeSqtll,
+        wait-ms = <10>;
+        tap-ms =  <10>;
+        bindings = <&kp SQT>
+                 , <&kp L>
+                 , <&kp L>;
+    )
 
     ZMK_MACRO(th,
         wait-ms = <10>;

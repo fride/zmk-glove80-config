@@ -41,6 +41,7 @@ combos {
        COMBO_ANY(TAB,          &kp TAB,       36 37 38)
        COMBO_ANY(ENTER,        &kp ENTER,     41 42 43)
 
+       COMBO_ANY(MAGIC2,       &magic2        48 49)
        COMBO_ANY(ESC,          &kp ESC,       37 38)
        COMBO_ANY(COLON,        &kp COLON,     41 42)
        COMBO_ANY(SLASH,        &kp SLASH,     59 60)

@@ -177,6 +177,17 @@ behaviors {
         max-delay-ms = <250>;
     };
 
+    magic2: second_magic_key {
+        compatible = "zmk,behavior-antecedent-morph";
+        label = "SECOND_MAGIC_KEY";
+        #binding-cells = <0>;
+        defaults = <&typeSqtll>;
+        bindings = <&typeSqtll>
+                    ;
+        antecedents = <I>;
+        max-delay-ms = <250>;
+    };
+
     // see https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md
     // Prev 	A 	B 	C 	D 	E 	F 	G 	H 	I 	J 	K 	L 	M 	N 	O 	P
     // Magic 	O 	EFORE 	Y 	Y 	U 	-- 	Y 	-- 	ON 	UST 	S 	k 	ENT 	ION 	A 	Y
