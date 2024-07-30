@@ -71,6 +71,7 @@ see [[https://github.com/dhruvinsh/zmk-tri-state][this]] [[Github]] repository.
  be an option too.
 
 * Sources and Inspirations
+- [Nordrassil](https://github.com/empressabyss/nordrassil/blob/main/README.md#arcane-)
 - [Anachron](https://github.com/theol0403/anachron-zmk-config/blob/master/README.md) is pretty nice!
 - [[https://www.jonashietala.se/blog/2022/08/28/the_t-342_keyboard_layout/][The T34]] layout.
 - [[Antecedent Morph Example][https://github.com/MikeSE314/zmk-config]]
