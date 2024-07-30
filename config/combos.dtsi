@@ -36,8 +36,8 @@
 combos {
     compatible = "zmk,combos";
 
-       COMBO_ANY(NUMWORD,      &num_word,     69 74)
-       COMBO_ANY(WINCHOOSE,    &winchoose,    24 25 26)
+       // COMBO_ANY(NUMWORD,      &num_word,     69 74)
+       COMBO_ANY(NUMWORD,      &kp MINUS,     69 74)
        COMBO_ANY(TAB,          &kp TAB,       36 37 38)
        COMBO_ANY(ENTER,        &kp ENTER,     41 42 43)
 
@@ -46,21 +46,21 @@ combos {
        COMBO_ANY(SLASH,        &kp SLASH,     59 60)
        COMBO_ANY(QUOTE,        &kp SQT,       59 61)
        COMBO_ANY(MINUS,        &kp MINUS,     60 61)
-       
+
 
         COMBO_ANY(grave,    &kp GRAVE,        49 50)
 
        COMBO_LAYER(combo_ue,      &typeUumlaut,   29 30, 0)
        COMBO_LAYER(combo_oe,      &typeOumlaut,   29 31, 0)
        COMBO_LAYER(combo_ae,      &typeAumlaut,   29 43, 0)
-       
+
        COMBO_LAYER(combo_LSFT,    &skq LSFT,      36 37, 2)
        COMBO_LAYER(combo_RSFT,    &skq RSFT,      42 43, 2)
        COMBO_LAYER(combo_LCTL,    &skq LCTL,      24 25, 2)
        COMBO_LAYER(combo_RCTL,    &skq RCTL,      30 31, 2)
 
        // Klammern als Combos.
-           // brackets       
+           // brackets
       COMBO_ANY(lbkt,     &kp LBKT,      24 36)
       COMBO_ANY(lpar,     &kp LPAR,      25 37)
       COMBO_ANY(lbrc,     &kp LBRC,      26 38)

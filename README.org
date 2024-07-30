@@ -8,7 +8,7 @@ I need a layout for
 ** layouts
 
 ** Current Layout: a modified Hands Down
-A  [[https://www.reddit.com/r/KeyboardLayouts/comments/1djzkv1/comment/l9onx07/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button][modified]] 
+A  [[https://www.reddit.com/r/KeyboardLayouts/comments/1djzkv1/comment/l9onx07/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button][modified]]
     [[https://sites.google.com/alanreiser.com/handsdown][Hands Down]] layout where au and ie are easy would be nice. Seems like
     #+BEGIN_SRC
     v g l þ *  * u o , z
@@ -48,16 +48,16 @@ A  [[https://www.reddit.com/r/KeyboardLayouts/comments/1djzkv1/comment/l9onx07/?
 *** Beakl 19
 Could be nice?!
     #+BEGIN_SRC
-    q . o u j  w d n m , 
-    h a e i k  g s r t p 
-    z ' / y x  b c l f v 
+    q . o u j  w d n m ,
+    h a e i k  g s r t p
+    z ' / y x  b c l f v
     #+END_SRC
 
 * Thumb Shift or Thumb Alpha?
 I need to decide on it and I need to find out which key to put on it?
 
 * Magic and stuff
-I use the [[https://github.com/klausweiss/zmk/blob/fix/adaptive-keys/docs/docs/behaviors/antecedent-morph.md][Antecedent Morph]] to emove some silly 
+I use the [[https://github.com/klausweiss/zmk/blob/fix/adaptive-keys/docs/docs/behaviors/antecedent-morph.md][Antecedent Morph]] to emove some silly
 patterns.
 
 ** Numwords
@@ -71,6 +71,7 @@ see [[https://github.com/dhruvinsh/zmk-tri-state][this]] [[Github]] repository.
  be an option too.
 
 * Sources and Inspirations
+- [Anachron](https://github.com/theol0403/anachron-zmk-config/blob/master/README.md) is pretty nice!
 - [[https://www.jonashietala.se/blog/2022/08/28/the_t-342_keyboard_layout/][The T34]] layout.
 - [[Antecedent Morph Example][https://github.com/MikeSE314/zmk-config]]
 - [[https://github.com/getreuer/qmk-keymap][Pascal Getreuer]]
