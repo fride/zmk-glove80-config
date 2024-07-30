@@ -184,7 +184,7 @@ behaviors {
         #binding-cells = <0>;
         defaults = <&kp SPACE>;
         bindings = <&kp T>
-                 , <&kp U>
+                 , <&kp U>;
         antecedents = <H A>;
         max-delay-ms = <350>;
     };
@@ -195,7 +195,7 @@ behaviors {
         #binding-cells = <0>;
         defaults = <&kp SPACE>;
         bindings = <&kp L>
-                 , <&kp S>
+                 , <&kp S>;
         antecedents = <L S>;
         max-delay-ms = <350>;
     };
