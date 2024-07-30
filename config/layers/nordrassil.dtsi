@@ -1,0 +1,10 @@
+nordrassil {
+    bindings = <
+        &to 1          &kp F2          &kp F3      &kp F4      &kp F5                                                                                                           &kp F6       &kp F7       &kp F8      &kp F9         &kp F10
+        &kp EQUAL      &kp N1          &kp N2      &kp LEFT    &kp RIGHT          &kp N5                                                                        &kp HOME        &kp UP       &kp DOWN     &kp END      &kp N0         &kp MINUS
+        &kp TAB        &kp Z           &kp Y       &hmr RALT O &kp U              &kp MINUS                                                                     &kp B           &kp G        &hmr RALT N  &kp F        &kp X          &kp SLASH
+        &kp ESC        &hml LSFT H     &hml LCTL I &hml LALT E &hml LGUI A        &hml HYPER DOT                                                                &hmr HYPER C    &hmr LGUI D  &hmr LALT R  &hmr RCTL S  &hmr RSFT L    &kp SQT
+        &kp GRAVE      &kp K           &kp SQT     &kp SLASH   &hml MEH  COMMA    &kp SEMI   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp J           &hmr MEH P   &kp CM       &kp W        &kp V          &kp PG_UP
+        &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT                     &kp SPACE   NAV_L       &kp LGUI  &num_word SYM_L  &skq LSFT                        &kp UP       &kp DOWN     &kp LBKT    &kp RBKT       &mo MAGIC
+    >;
+};
