@@ -177,6 +177,30 @@ behaviors {
         max-delay-ms = <250>;
     };
 
+
+    arcane_l: arcane_l {
+        compatible = "zmk,behavior-antecedent-morph";
+        label = "ARCANE_LEFT";
+        #binding-cells = <0>;
+        defaults = <&kp SPACE>;
+        bindings = <&kp T>
+                 , <&kp U>
+        antecedents = <H A>;
+        max-delay-ms = <350>;
+    };
+
+    arcane_r: arcane_r {
+        compatible = "zmk,behavior-antecedent-morph";
+        label = "ARCANE_RIGHT";
+        #binding-cells = <0>;
+        defaults = <&kp SPACE>;
+        bindings = <&kp L>
+                 , <&kp S>
+        antecedents = <L S>;
+        max-delay-ms = <350>;
+    };
+
+
     // see https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md
     // Prev 	A 	B 	C 	D 	E 	F 	G 	H 	I 	J 	K 	L 	M 	N 	O 	P
     // Magic 	O 	EFORE 	Y 	Y 	U 	-- 	Y 	-- 	ON 	UST 	S 	k 	ENT 	ION 	A 	Y
