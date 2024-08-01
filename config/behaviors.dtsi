@@ -177,14 +177,15 @@ behaviors {
         max-delay-ms = <250>;
     };
 
-    magic2: second_magic_key {
+    magicr: right_magic_key {
         compatible = "zmk,behavior-antecedent-morph";
-        label = "SECOND_MAGIC_KEY";
+        label = "RIGHT_MAGIC_KEY";
         #binding-cells = <0>;
-        defaults = <&typeSqtll>;
-        bindings = <&typeSqtll>
+        defaults = <&kp SPACE>;
+        bindings = <&kp U>
+                 , <&kp H>
                     ;
-        antecedents = <I>;
+        antecedents = <A T>;
         max-delay-ms = <250>;
     };
 
