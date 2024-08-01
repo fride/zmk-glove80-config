@@ -68,11 +68,11 @@
 #define Arrows arrows 0 0
 
 // less thumbs
-#define SYM_L &msl SYMBOLS SYMBOLS
-#define NAV_L &msl NAVI NAVI
-#define NAV_SPACE &lt NAVI SPACE
-#define NAV_R &lt NAVI R
-
+#define SYM_L      &msl SYMBOLS SYMBOLS
+#define NAV_L      &msl NAVI    NAVI
+#define NAV_SPACE  &lt  NAVI    SPACE
+#define NAV_R      &lt  NAVI    R
+#define NUM_SPC    &lt  NUMBERS SPACE
 / {
 
     #include "combos.dtsi"
