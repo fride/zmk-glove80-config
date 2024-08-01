@@ -11,7 +11,7 @@ behaviors {
         <&macro_param_1to1 &macro_tap &kp MACRO_PLACEHOLDER>,
         <&macro_release &kp LSHFT>;
     };
-    
+
     as_ht: autoshift_hold_tap {
         compatible = "zmk,behavior-hold-tap";
         label = "AUTOSHIFT_HOLD_TAP";
@@ -186,6 +186,7 @@ behaviors {
         antecedents = <T C>;
         max-delay-ms = <250>;
     };
+    
     magic: the_magic_key {
         compatible = "zmk,behavior-antecedent-morph";
         label = "THE_MAGIC_KEY";
@@ -217,13 +218,4 @@ behaviors {
         antecedents = <A E C D E G I J J K L M O P R S U V Y MINUS EQUAL DOT STAR>;
         max-delay-ms = <250>;
     };
-    magic_mo: magic_mo { 
-        compatible = "zmk,behavior-hold-tap";
-        label = "magic_layer";
-        #binding-cells = <2>;
-        tapping-term-ms = <my_tapping_term>;
-        flavor = "balanced";
-        bindings = <&mo>, <&magic>;      
-    };
-
 };
