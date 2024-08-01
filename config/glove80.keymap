@@ -71,6 +71,7 @@
 #define SYM_L &msl SYMBOLS SYMBOLS
 #define NAV_L &msl NAVI NAVI
 #define NAV_SPACE &lt NAVI SPACE
+#define NAV_R &lt NAVI R
 
 / {
 
@@ -89,7 +90,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        #include "layers/hands_down_ie_th.dtsi"
+        #include "layers/hands_down_vv.dtsi"
         #include "layers/navigation.dtsi"
         #include "layers/symbols.dtsi"    
         #include "layers/numword.dtsi"        
