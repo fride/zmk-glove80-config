@@ -37,6 +37,7 @@ combos {
     compatible = "zmk,combos";
 
        // COMBO_ANY(NUMWORD,      &num_word,     69 74)
+       COMBO_ANY(COMBO_Q,      &kp Q    ,     23 34)
        COMBO_ANY(NUMWORD,      &kp MINUS,     69 74)
        COMBO_ANY(TAB,          &kp TAB,       36 37 38)
        COMBO_ANY(ENTER,        &kp ENTER,     41 42 43)
