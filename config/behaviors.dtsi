@@ -234,8 +234,9 @@ behaviors {
         bindings = <&kp O>
                  , <&kp I>
                  , <&kp E>
+                 , <&kp SPACE> <&skq LSFT>
                  ;
-        antecedents = <E I>;
+        antecedents = <A E I DOT>;
         max-delay-ms = <250>;
     };
 };
