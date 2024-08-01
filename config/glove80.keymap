@@ -70,7 +70,7 @@
 // less thumbs
 #define SYM_L &msl SYMBOLS SYMBOLS
 #define NAV_L &msl NAVI NAVI
-
+#define NAV_SPACE &lt NAVI SPACE
 
 / {
 
