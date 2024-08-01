@@ -188,9 +188,9 @@ behaviors {
         max-delay-ms = <250>;
     };
 
-    magic_number : magic_number  { // use on left hand to mod right
+    magic_number: magic_number { 
         compatible = "zmk,behavior-hold-tap";
-        label = "homerow_mods_left";
+        label = "magic_number";
         #binding-cells = <2>;
         tapping-term-ms = <my_tapping_term>;
         flavor = "balanced";
