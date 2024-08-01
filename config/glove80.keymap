@@ -74,7 +74,7 @@
 #define NAV_R &lt NAVI R
 
 
-#define MAGIC_NUM &magic_number NUMBERS 0
+// #define MAGIC_NUM &magic_number NUMBERS 0
 
 / {
 

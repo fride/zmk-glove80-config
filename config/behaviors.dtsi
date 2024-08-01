@@ -127,24 +127,6 @@ behaviors {
         quick-release;
         ignore-modifiers;
     };
-    ad_a: adaptive_a {
-        compatible = "zmk,behavior-antecedent-morph";
-        label = "ADAPTIVE_A";
-        #binding-cells = <0>;
-        defaults = <&kp A>;
-        bindings = <&kp U>, <&kp O>;
-        antecedents = <Q Z>;
-        max-delay-ms = <250>;
-    };
-    ad_dot: adaptive_dot {
-        compatible = "zmk,behavior-antecedent-morph";
-        label = "ADAPTIVE_DOT";
-        #binding-cells = <0>;
-        defaults = <&kp DOT>;
-        bindings = <&kp I>;
-        antecedents = <E>;
-        max-delay-ms = <250>;
-    };
 
     arrows: arrows {
         compatible = "zmk,behavior-hold-tap";
@@ -167,35 +149,15 @@ behaviors {
         antecedents = <T C>;
         max-delay-ms = <250>;
     };
-    magic_th: the_magic_th_key {
-        compatible = "zmk,behavior-antecedent-morph";
-        label = "THE_MAGIC_TH_KEY";
-        #binding-cells = <0>;
-        defaults = <&th>;
-        bindings = <&ch>;
-        antecedents = <S>;
-        max-delay-ms = <250>;
-    };
 
-    magic2: second_magic_key {
-        compatible = "zmk,behavior-antecedent-morph";
-        label = "SECOND_MAGIC_KEY";
-        #binding-cells = <0>;
-        defaults = <&typeSqtll>;
-        bindings = <&typeSqtll>
-                    ;
-        antecedents = <I>;
-        max-delay-ms = <250>;
-    };
-
-    magic_number: magic_number { 
-        compatible = "zmk,behavior-hold-tap";
-        label = "magic_number";
-        #binding-cells = <2>;
-        tapping-term-ms = <my_tapping_term>;
-        flavor = "balanced";
-        bindings = <&mo>, <&magic>;      
-    };
+    // magic_number: magic_number { 
+    //     compatible = "zmk,behavior-hold-tap";
+    //     label = "magic_number";
+    //     #binding-cells = <2>;
+    //     tapping-term-ms = <my_tapping_term>;
+    //     flavor = "balanced";
+    //     bindings = <&mo>, <&magic>;      
+    // };
 
     magic: the_magic_key {
         compatible = "zmk,behavior-antecedent-morph";
