@@ -120,6 +120,14 @@
                     , <&macro_release &kp LGUI>
         ;
     )
+
+    ZMK_MACRO(spaceShift,
+        wait-ms = <50>;
+        tap-ms = <20>;
+        bindings  = <&kp SPACE>                    
+                 , <&skq LSFT>
+        ;
+    )
     ZMK_MACRO(winchoose,
         wait-ms = <50>;
         tap-ms = <20>;
