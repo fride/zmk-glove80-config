@@ -150,14 +150,14 @@ behaviors {
         max-delay-ms = <250>;
     };
 
-    // magic_number: magic_number { 
-    //     compatible = "zmk,behavior-hold-tap";
-    //     label = "magic_number";
-    //     #binding-cells = <2>;
-    //     tapping-term-ms = <my_tapping_term>;
-    //     flavor = "balanced";
-    //     bindings = <&mo>, <&magic>;      
-    // };
+    magic_number: magic_number { 
+        compatible = "zmk,behavior-hold-tap";
+        label = "magic_number";
+        #binding-cells = <2>;
+        tapping-term-ms = <my_tapping_term>;
+        flavor = "balanced";
+        bindings = <&mo>, <&magic>;      
+    };
 
     magic: the_magic_key {
         compatible = "zmk,behavior-antecedent-morph";

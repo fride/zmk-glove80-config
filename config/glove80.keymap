@@ -72,8 +72,6 @@
 #define NAV_L &msl NAVI NAVI
 #define NAV_SPACE &lt NAVI SPACE
 #define NAV_R &lt NAVI R
-
-
 // #define MAGIC_NUM &magic_number NUMBERS 0
 
 / {
