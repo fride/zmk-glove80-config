@@ -167,6 +167,7 @@ behaviors {
         antecedents = <T C>;
         max-delay-ms = <250>;
     };
+    
     ad_slash: adaptive_slash {
      compatible = "zmk,behavior-antecedent-morph";
         label = "ADAPTIVE_N";
@@ -175,7 +176,6 @@ behaviors {
         bindings = <&kp U>;
         antecedents = <A>;
         max-delay-ms = <250>;
-    };
     };
 
     magic_th: the_magic_th_key {
