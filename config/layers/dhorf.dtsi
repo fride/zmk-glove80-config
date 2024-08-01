@@ -1,0 +1,16 @@
+
+ dhorf {            
+/*
+    v l h g q  j f o u ,
+    s r n t b  y c a e i
+    z x m d k  p w ' ; .
+ */
+    bindings = <
+    &to 0          &kp F2          &kp F3      &kp F4      &kp F5                                                                                                  &kp F6       &kp F7      &kp F8      &kp F9         &kp F10
+    &kp EQUAL      &kp N1          &kp N2      &kp LEFT    &kp RIGHT      &kp N5                                                                         &kp HOME  &kp UP       &kp DOWN    &kp END     &kp N0         &kp MINUS
+    &kp TAB        &kp V           &kp L       &kp H       &kp G          &kp Q                                                                          &kp J     &kp F        &kp O       &kp U       &kp COMMA      &kp BSLH
+    &kp ESC        &kp S           &kp R       &kp N       &kp T          &kp B                                                                          &kp Y     &kp C        &kp A       &kp E       &kp I          &kp SQT
+    &kp GRAVE      &kp Z           &kp X       &kp N       &kp D          &kp K       &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp P     &kp W        &kp SQT     &kp SEMI    &kp DOT        &kp PG_UP
+    &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT                  NAV_SPACE   skq LSFT    &kp LGUI  &kp RGUI &skq LSFT MAGIC_NUM                &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
+    >;
+};

@@ -73,6 +73,9 @@
 #define NAV_SPACE &lt NAVI SPACE
 #define NAV_R &lt NAVI R
 
+
+#define MAGIC_NUM &magic_number NUMBERS 0
+
 / {
 
     #include "combos.dtsi"
@@ -90,7 +93,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        #include "layers/hands_down_vv.dtsi"
+        #include "layers/dhorf.dtsi"
         #include "layers/navigation.dtsi"
         #include "layers/symbols.dtsi"    
         #include "layers/numword.dtsi"        
