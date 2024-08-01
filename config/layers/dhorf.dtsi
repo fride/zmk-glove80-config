@@ -6,6 +6,6 @@
     &kp TAB        &kp V           &kp L       &kp H       &kp G          &kp Q                                                                          &kp J     &kp F        &kp O       &kp U       &kp COMMA      &kp BSLH
     &kp ESC        &kp S           &kp R       &kp N       &kp T          &kp B                                                                          &kp Y     &kp C        &kp A       &kp E       &kp I          &kp SQT
     &kp GRAVE      &kp Z           &kp X       &kp N       &kp D          &kp K       &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp P     &kp W        &kp SQT     &kp SEMI    &kp DOT        &kp PG_UP
-    &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT                  NAV_SPACE   &skq LSFT   &kp LGUI  &kp RGUI &skq LSFT &magic_number NUMBERS 0                  &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
+    &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT                  NAV_SPACE   &skq LSFT   &kp LGUI  &kp RGUI &skq LSFT &magic_mo NUMBERS 0                  &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
     >;
 };

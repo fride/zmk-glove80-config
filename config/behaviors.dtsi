@@ -149,16 +149,6 @@ behaviors {
         antecedents = <T C>;
         max-delay-ms = <250>;
     };
-
-    magic_number: magic_number { 
-        compatible = "zmk,behavior-hold-tap";
-        label = "magic_number";
-        #binding-cells = <2>;
-        tapping-term-ms = <my_tapping_term>;
-        flavor = "balanced";
-        bindings = <&mo>, <&magic>;      
-    };
-
     magic: the_magic_key {
         compatible = "zmk,behavior-antecedent-morph";
         label = "THE_MAGIC_KEY";
@@ -190,4 +180,13 @@ behaviors {
         antecedents = <A E C D E G I J J K L M O P R S U V Y MINUS EQUAL DOT STAR>;
         max-delay-ms = <250>;
     };
+    magic_mo: magic_mo { 
+        compatible = "zmk,behavior-hold-tap";
+        label = "magic_layer";
+        #binding-cells = <2>;
+        tapping-term-ms = <my_tapping_term>;
+        flavor = "balanced";
+        bindings = <&mo>, <&magic>;      
+    };
+
 };
