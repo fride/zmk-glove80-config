@@ -188,6 +188,17 @@ behaviors {
         antecedents = <A T>;
         max-delay-ms = <250>;
     };
+    magicl: left_magic_key {
+        compatible = "zmk,behavior-antecedent-morph";
+        label = "LEFT_MAGIC_KEY";
+        #binding-cells = <0>;
+        defaults = <&kp SPACE>;
+        bindings = <&kp U>
+                 , <&kp H>
+                    ;
+        antecedents = <A T>;
+        max-delay-ms = <250>;
+    };
 
     // see https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md
     // Prev 	A 	B 	C 	D 	E 	F 	G 	H 	I 	J 	K 	L 	M 	N 	O 	P
