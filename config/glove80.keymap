@@ -90,7 +90,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        #include "layers/hands_down_vv.dtsi"
+        #include "layers/magic_sturdy.dtsi"
         #include "layers/navigation.dtsi"
         #include "layers/symbols.dtsi"    
         #include "layers/numword.dtsi"        
