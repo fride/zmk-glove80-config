@@ -58,7 +58,6 @@
 // modifiers
 #define HYPER LC(LS(LG(LALT)))
 #define MEH LS(LC(LALT))
-
 // special chars
 #define U_UML &lk_U_umlaut 0 U
 #define A_UML &lk_A_umlaut 0 A
@@ -92,6 +91,7 @@
     keymap {
         compatible = "zmk,keymap";
         #include "layers/puq.dtsi"
+        #include "layers/puq2.dtsi"
         #include "layers/navigation.dtsi"
         #include "layers/symbols.dtsi"    
         #include "layers/numword.dtsi"        
