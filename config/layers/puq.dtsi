@@ -1,10 +1,10 @@
  puq {            
     bindings = <
-    &to 0          &kp F2          &kp F3      &kp F4      &kp F5                                                                                             &kp F6            &kp F7       &kp F8      &kp F9         &kp F10
-    &kp EQUAL      &kp N1          &kp N2      &kp LEFT    &kp RIGHT      &kp N5                                                                     &kp HOME &kp UP            &kp DOWN     &kp END     &kp N0         &kp MINUS
-    &kp TAB        &lt SYMBOLS Z   &kp M       &kp L       &hml MEH C     &kp G                                                                      &kp Q    &hmr MEH COMMA    &sl ALPHA2   &kp U       &kp P          &kp BSLH
-    &kp ESC        &hml LSFT S     &hml LCTL N &hml LALT R &hml LGUI T    &kp D                                                                      &kp O    &hmr RGUI A       &hmr LALT E  &hmr RCTL I &hmr RSFT H    &kp SQT
-    &kp GRAVE      &lt NUMBERS F   &kp B       &kp W       NUM_V          &kp J   &skq LSFT   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &skq LSFT    &kp X    &kp SQT           &kp DOT      &kp Y       &kp K          &kp PG_UP
-    &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_SPACE   NUM_V       &kp LGUI   &kp RGUI &skq LCTL &skq LSFT             &kp UP            &kp DOWN     &kp LBKT    &kp RBKT       &mo MAGIC
+    &to 0          &kp F2          &kp F3      &kp F4      &kp F5                                                                                                  &kp F6            &kp F7       &kp F8      &kp F9         &kp F10
+    &kp EQUAL      &kp N1          &kp N2      &kp LEFT    &kp RIGHT      &kp N5                                                                     &kp HOME      &kp UP            &kp DOWN     &kp END     &kp DEL        &kp MINUS
+    &kp TAB        &kp Z           &kp M       &kp L       &hml MEH C     &kp G                                                                      &kp Q         &hmr MEH COMMA    &sl ALPHA2   &kp U       &kp P          &kp BSLH
+    &kp BSPC       &lt SYMBOLS S   &hml LCTL N &hml LALT R &hml LGUI T    &hml HYPER D                                                               &hmr HYPER O  &hmr RGUI A       &hmr LALT E  &hmr RCTL I &lt SYMBOLS H  &kp MINUS
+    &kp GRAVE      &kp F           &kp B       &kp W       NUM_V          &kp J   &skq LSFT   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &skq LSFT    &kp X         &kp SQT           &kp DOT      &kp Y       &kp K          &kp PG_UP
+    &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_SPACE   NUM_V       &kp LGUI   &kp RGUI &skq LCTL &skq LSFT                  &kp UP            &kp DOWN     &kp LBKT    &kp RBKT       &mo MAGIC
     >;
 };
