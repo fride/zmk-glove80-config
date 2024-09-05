@@ -214,11 +214,7 @@ behaviors {
         max-delay-ms = <250>;
     };
 
-    // see https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md
-    // Prev 	A 	B 	C 	D 	E 	F 	G 	H 	I 	J 	K 	L 	M 	N 	O 	P
-    // Magic 	O 	EFORE 	Y 	Y 	U 	-- 	Y 	-- 	ON 	UST 	S 	k 	ENT 	ION 	A 	Y
-    // Prev 	Q 	R 	S 	T 	U 	V 	W 	X 	Y 	Z 	, 	. 	/ 	- 	= 	wspc
-    // Magic 	-- 	L 	K 	MENT 	E 	ER 	HICH 	ES 	P 	-- 	⎵BUT 	\ 	-- 	> 	>
+
     magic: the_magic_key {
         compatible = "zmk,behavior-antecedent-morph";
         label = "THE_MAGIC_KEY";
@@ -226,9 +222,9 @@ behaviors {
         defaults = <&kp N>;
         bindings = <&kp O>
                  , <&kp M>
-                 , <&kp L>;
+                 , <&kp L>
                  , <&kp R>
-                 , <&kp R>;
+                 , <&kp R>
                  , <&kp B>;
         antecedents = <A S R L W M>;
         max-delay-ms = <250>;
