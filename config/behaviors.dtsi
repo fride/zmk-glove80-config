@@ -178,14 +178,14 @@ behaviors {
         max-delay-ms = <250>;
     };
 
-    morph_DOT-: morph_DOT {
+    morph_DOT: morph_DOT {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    morph_COM-: morph_COM {
+    morph_COM: morph_COM {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp COMMAN>, <&kp QUESTION>;
