@@ -178,7 +178,7 @@ behaviors {
         max-delay-ms = <250>;
     };
 
-    morph_DOT: morph_DOT {
+    dotExcl: dotExcl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp EXCL>;
