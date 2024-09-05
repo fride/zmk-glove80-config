@@ -49,10 +49,11 @@
 
 // layers
 #define DEFAULT     0
-#define NAVI        1
-#define SYMBOLS     2
-#define NUMBERS     3
-#define MAGIC       4
+#define ALPHA2      1
+#define NAVI        2
+#define SYMBOLS     3
+#define NUMBERS     4
+#define MAGIC       5
 
 // modifiers
 #define HYPER LC(LS(LG(LALT)))
@@ -90,7 +91,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        #include "layers/hands_down_ie_th.dtsi"
+        #include "layers/puq.dtsi"
         #include "layers/navigation.dtsi"
         #include "layers/symbols.dtsi"    
         #include "layers/numword.dtsi"        
