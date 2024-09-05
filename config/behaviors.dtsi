@@ -188,7 +188,7 @@ behaviors {
     morph_COM: morph_COM {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COMMAN>, <&kp QUESTION>;
+            bindings = <&kp COMMA>, <&kp QUES>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
