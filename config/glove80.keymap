@@ -67,7 +67,8 @@
 // I will never like this dsl! Why do I have to pass arguments where no arguments are used!?
 #define Arrows arrows 0 0
 
-#define NUM_V &lt NUMBERS V
+#define CommQues &commQues MEH 0 
+#define NUM_V &lt NUMBERS V 
 
 // less thumbs
 #define SYM_L &msl SYMBOLS SYMBOLS
