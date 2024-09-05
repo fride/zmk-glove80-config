@@ -93,8 +93,8 @@
 
     keymap {
         compatible = "zmk,keymap";
-        #include "layers/hands_down_vv.dtsi"
-        #include "layers/hands_down2_vv.dtsi"
+        #include "layers/hands_down_vx.dtsi"
+        #include "layers/hands_down2_vx.dtsi"
         #include "layers/navigation.dtsi"
         #include "layers/symbols.dtsi"    
         #include "layers/numbers.dtsi"        
