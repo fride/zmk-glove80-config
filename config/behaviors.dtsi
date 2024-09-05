@@ -229,13 +229,29 @@ behaviors {
         antecedents = <A S R L W M>;
         max-delay-ms = <250>;
     };
+     SlshStar: SlshStar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SlshStar";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp STAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
 
-    hm_magic: hm_magic {
-         compatible = "zmk,behavior-hold-tap";
-        label = "homerow_mods_left";
-        #binding-cells = <2>;
-        tapping-term-ms = <my_tapping_term>;
-        flavor = "balanced";
-        bindings = <&kp>, <&magic>;
-    }
+    DqtLbkt: DqtLbkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DqtLbkt";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>, <&kp LBKT>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+    };
+
+    PuqDqt: PuqDqt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PuqDqt";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_tapping_term>;
+            flavor = "balanced";
+            bindings = <&mo>, <&DqtLbkt>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+    };
 };
