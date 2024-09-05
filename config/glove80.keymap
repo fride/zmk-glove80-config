@@ -96,7 +96,7 @@
         #include "layers/puq2.dtsi"
         #include "layers/navigation.dtsi"
         #include "layers/symbols.dtsi"    
-        #include "layers/numword.dtsi"        
+        #include "layers/numbers.dtsi"        
         magic_layer {
             bindings = <
             &bt BT_CLR        &none               &none           &none           &none                                                                                                           &none      &none      &none      &none      &none
