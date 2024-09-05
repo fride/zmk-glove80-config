@@ -5,6 +5,6 @@
     &kp TAB        &kp Z           &kp M       &kp L       &hml MEH C     &kp G                                                                      &kp Q         CommQues          &sl ALPHA2   &kp U       &kp P          &kp BSLH
     &kp BSPC       &lt SYMBOLS S   &hml LCTL N &hml LALT R &hml LGUI T    &hml HYPER D                                                               &hmr HYPER O  &hmr RGUI A       &hmr LALT E  &hmr RCTL I &lt SYMBOLS H  &kp MINUS
     &kp GRAVE      &kp F           &kp B       &kp W       NUM_V          &kp J   &skq LSFT   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &skq LSFT    &kp X         &kp SQT           &dotExcl     &kp Y       &kp K          &kp PG_UP
-    &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_SPACE   &magic      &kp LGUI   &kp RGUI &magic    &skq LSFT                  &kp UP            &kp DOWN     &kp LBKT    &kp RBKT       &mo MAGIC
+    &mo MAGIC      &kp HOME        &kp LBRC    &kp RBKT    &kp RPAR              NAV_SPACE   &magic      &kp LGUI   &kp RGUI &magic    &skq LSFT                   &kp RPAR          &kp RBKT     &kp RBRC    &kp RBKT       &mo MAGIC
     >;
 };
