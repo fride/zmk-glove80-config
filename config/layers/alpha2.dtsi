@@ -1,10 +1,10 @@
  alpha2 {            
     bindings = <
-    &to 0          &kp F2          &kp F3      &kp F4      &kp F5                                                                                                &kp F6       &kp F7       &kp F8      &kp F9         &kp F10
-    &kp EQUAL      &kp N1          &kp N2      &kp LEFT    &kp RIGHT      &kp N5                                                                     &kp HOME    &kp UP       &kp DOWN     &kp END     &kp N0         &kp MINUS
-    &kp TAB        &kp V           &kp W       &kp M       &kp G          &kp J                                                                      &kp HASH    &kp RA(U)    &kp RA(O)   &SqtLbkt     &kp RA(A)       &kp BSLH
-    &kp BSPC       &kp S           &kp C       &kp N       &kp T          &kp K                                                                      &kp COMMA   &kp I        &kp E        &kp A       &kp H          &kp Z
-    &kp GRAVE      &kp X           &kp P       &kp L       &kp D          &kp B   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp MINUS   &kp Y        &kp SLASH    &kp DOT     &kp F          &kp PG_UP
-    &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_R       &magic    &kp LGUI   &kp RGUI   &magic    NUM_SPC                  &kp UP       &kp DOWN     &kp LBKT    &kp RBKT       &mo MAGIC
+    &to 0          &kp F2          &kp F3      &kp F4      &kp F5                                                                                                    &kp F6       &kp F7       &kp F8      &kp F9         &kp F10
+    &kp EQUAL      &kp N1          &kp N2      &kp LEFT    &kp RIGHT      &kp N5                                                                     &kp LA(LS(N2))  &kp UP       &kp DOWN     &kp END     &kp N0         &kp MINUS
+    &kp TAB        &kp Z           &kp Q       &kp AS(N4)  &kp LA(N7)     &kp J                                                                      &kp HASH        &kp RA(U)    &kp RA(O)   &SqtLbkt     &kp RA(S)       &kp BSLH
+    &kp BSPC       &kp S           &kp C       &kp RA(N)   &kp T          &kp K                                                                      &kp COMMA       &kp RA(A)    &kp E        &kp RA(A)   &kp H          &kp Z
+    &kp GRAVE      &kp X           &kp P       &kp L       &kp D          &kp B   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp MINUS       &kp Y        &kp SLASH    &kp DOT     &kp F          &kp PG_UP
+    &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_R       &magic    &kp LGUI   &kp RGUI   &magic    NUM_SPC                      &kp UP       &kp DOWN     &kp LBKT    &kp RBKT       &mo MAGIC
     >;
 };

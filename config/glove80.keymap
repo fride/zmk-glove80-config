@@ -91,11 +91,13 @@
 
     keymap {
         compatible = "zmk,keymap";
-         #include "layers/alpha1.dtsi"        
-         #include "layers/alpha2.dtsi"        
+        
+        #include "layers/alpha1.dtsi"        
+        #include "layers/alpha2.dtsi"        
         #include "layers/navigation.dtsi"
         #include "layers/symbols.dtsi"    
-        #include "layers/numbers.dtsi"        
+        #include "layers/numword.dtsi"        
+        
         magic_layer {
             bindings = <
             &bt BT_CLR        &none               &none           &none           &none                                                                                                           &none      &none      &none      &none      &none
