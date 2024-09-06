@@ -241,4 +241,17 @@ behaviors {
             flavor = "balanced";
             bindings = <&mo>, <&DqtLbkt>;
     };
+
+       SqtLbkt: SqtLbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp LBKT>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        DqtRbkt: DqtRbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>, <&kp RBKT>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
 };

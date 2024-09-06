@@ -86,3 +86,14 @@ see [[https://github.com/dhruvinsh/zmk-tri-state][this]] [[Github]] repository.
 - https://cyanophage.github.io/playground.html?layout=jcyfkzl,uq=rsthdmnaio%27/vgpbxw.;-%5Ce
 - https://github.com/moutis/zmk-Zen/blob/main/config/corne-ish_zen.l_alpha-HD-vb.dtsi
 - https://www.reddit.com/r/KeyboardLayouts/comments/1e2jzra/bestperforming_layout_in_my_comparison_beats_both/
+
+
+* My Hands Down Version
+** VV with 
+
+#+BEGIN_SRC
+v w m g j    # u o " '
+s c n t k    , i e a h
+x p l d b    - y / . f
+      r
+#+END_SRC
