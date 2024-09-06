@@ -240,6 +240,5 @@ behaviors {
             tapping-term-ms = <my_tapping_term>;
             flavor = "balanced";
             bindings = <&mo>, <&DqtLbkt>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
     };
 };
