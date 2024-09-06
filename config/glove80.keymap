@@ -99,7 +99,7 @@
                 &kp EQUAL      &win_swap       &app_swap   &kp DOWN    &kp UP         &kp N5                                                                     &kp HOME      &kp LEFT          &kp RIGHT    &kp END     &kp DEL        &kp DEL
                 &kp TAB        &kp V           &kp L       &kp H       &hml MEH K     &kp K                                                                      &kp Q         &kp F             &kp O        &kp U       &kp J          &kp BSLH
                 &kp BSPC       &lt LSFT S      &hml LCTL R &hml LALT N &hml LGUI T    &hml HYPER B                                                               &hmr HYPER Y  &hmr RGUI C       &hmr LALT A  &hmr RCTL E &sl ALPHA2     &kp MINUS
-                &kp GRAVE      &kp Z           &kp X       &kp M       &kg D          &kp P   &skq LSFT   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &skq LSFT    &kp SQT       &kp W             &kp DOT      &kp SEMI    &kp COMMA      &kp PG_UP
+                &kp GRAVE      &kp Z           &kp X       &kp M       &kp D          &kp P   &skq LSFT   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &skq LSFT    &kp SQT       &kp W             &kp DOT      &kp SEMI    &kp COMMA      &kp PG_UP
                 &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_SPACE   &magic      &kp LGUI   &kp RGUI &magic    NUM_I                      &kp UP            &kp DOWN     &kp LBKT    &kp RBKT       &mo MAGIC
             >;
         };
