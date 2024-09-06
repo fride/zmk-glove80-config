@@ -70,12 +70,11 @@
 #define CommQues &commQues MEH 0 
 #define NUM_V &lt NUMBERS V 
 
-// less thumbs
 #define SYM_L &msl SYMBOLS SYMBOLS
 #define NAV_L &msl NAVI NAVI
-#define NAV_SPACE &lt NAVI SPACE
+#define NUM_SPC &lt NUMBERS SPACE
 #define NAV_R &lt NAVI R
-#define NUM_I &lt NUMBERS I
+
 / {
 
     #include "combos.dtsi"
@@ -95,15 +94,24 @@
         compatible = "zmk,keymap";
          alpha {            
             bindings = <
-                &app_swap      &kp F2          &kp F3      &kp F4      &kp F5                                                                                                  &kp F6            &kp F7       &kp F8      &kp F9         &kp F10
-                &kp EQUAL      &win_swap       &app_swap   &kp DOWN    &kp UP         &kp N5                                                                     &kp HOME      &kp LEFT          &kp RIGHT    &kp END     &kp DEL        &kp DEL
-                &kp TAB        &kp V           &kp L       &kp H       &hml MEH K     &kp K                                                                      &kp Q         &kp F             &kp O        &kp U       &kp J          &kp BSLH
-                &kp BSPC       &lt LSFT S      &hml LCTL R &hml LALT N &hml LGUI T    &hml HYPER B                                                               &hmr HYPER Y  &hmr RGUI C       &hmr LALT A  &hmr RCTL E &sl ALPHA2     &kp MINUS
-                &kp GRAVE      &kp Z           &kp X       &kp M       &kp D          &kp P   &skq LSFT   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &skq LSFT    &kp SQT       &kp W             &kp DOT      &kp SEMI    &kp COMMA      &kp PG_UP
-                &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_SPACE   &magic      &kp LGUI   &kp RGUI &magic    NUM_I                      &kp UP            &kp DOWN     &kp LBKT    &kp RBKT       &mo MAGIC
+                &to 0          &kp F2          &kp F3      &kp F4      &kp F5                                                                                             &kp F6       &kp F7       &kp F8      &kp F9         &kp F10
+                &kp EQUAL      &kp N1          &kp N2      &kp LEFT    &kp RIGHT      &kp N5                                                                     &kp HOME &kp UP       &kp DOWN     &kp END      &kp N0         &kp MINUS
+                &kp TAB        &kp V           &kp G       &kp L       &magic_th      &kp P                                                                      &kp Q    U_UML         O_UML       &kp COMMA   &kp Z          &kp BSLH
+                &kp ESC        &kp C           &kp S       &ad_n       &kp T          &kp M                                                                      &kp K    &kp I        &kp E       A_UML       &kp H          &kp SQT
+                &kp GRAVE      &kp X           &kp F       &kp W       &kp D          &kp B   &kp LCTRL   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &kp RCTRL    &kp J    &kp Y        &kp SQT     &kp DOT     &kp P          &kp PG_UP
+                &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_R       &kp LALT    &kp LGUI   &kp RGUI &kp RALT  NUM_SPC               &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
             >;
         };
-        #include "layers/puq2.dtsi"
+        alpha2 {            
+            bindings = <
+                &app_swap      &kp F2          &kp F3      &kp F4      &kp F5                                                                                                  &kp F6            &kp F7       &kp F8      &kp F9         &kp F10
+                &kp EQUAL      &win_swap       &app_swap   &kp DOWN    &kp UP         &kp N5                                                                     &kp HOME      &kp LEFT          &kp RIGHT    &kp END     &kp DEL        &kp DEL
+                &kp TAB        &kp V           &kp L       &kp H       &hml MEH K     &kp K                                                                      &kp Q         &kp F             &kp RA(O)    &kp RA(U)   &kp J          &kp BSLH
+                &kp BSPC       &kp RA(S)       &hml LCTL R &hml LALT N &hml LGUI T    &hml HYPER B                                                               &hmr HYPER Y  &hmr RGUI C       &kp RA(A)    &hmr RCTL E &sl ALPHA2     &kp MINUS
+                &kp GRAVE      &kp Z           &kp X       &kp M       &kp D          &kp P   &skq LSFT   &kp LALT    &kp LGUI  &kp LGUI  &kp RALT  &skq LSFT    &kp SQT       &kp W             &kp DOT      &kp SEMI    &kp COMMA      &kp PG_UP
+                &mo MAGIC      &kp HOME        &kp END     &kp LEFT    &kp RIGHT              NAV_R       &kp LALT    &kp LGUI   &kp RGUI &kp RALT  NUM_SPC               &kp UP       &kp DOWN    &kp LBKT    &kp RBKT       &mo MAGIC
+            >;
+        };
         #include "layers/navigation.dtsi"
         #include "layers/symbols.dtsi"    
         #include "layers/numword.dtsi"        
