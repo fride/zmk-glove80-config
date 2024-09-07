@@ -77,7 +77,7 @@
 
 // special symbols
 
-#define YEN A(S(N4))
+#define YEN  RA(LS(N4))
 #define EURO RA(N5) 
 
 / {
