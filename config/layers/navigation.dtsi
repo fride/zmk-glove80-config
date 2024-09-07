@@ -5,6 +5,6 @@ l_nav {
         &trans            &kp ESC             &none           &kp UP          &none           &kp END                                                                               &kp RPAR     &kp BSPC     &kp UP        &kp DEL      &kp SLCK        &none
         &trans            &skq LSFT           &skq LCTRL      &skq LALT       &skq LGUI       &sk HYPER                                                                             &kp PRCNT    &kp LEFT     &kp DOWN     &kp RIGHT     &kp RIGHT       &none
         &trans            &kp K_CMENU         &none           &kp F11         &app_swap      &win_swap         &none      &trans      &to DEFAULT &trans      &trans      &trans    &kp COMMA    &kp KP_N1    &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &trans
-        &trans        &trans          &trans           &trans           &trans                 &kp SPACE   &kp HYPER   &kp LGUI  &kp LT    &kp GT    &kp N0                             &trans           &trans           &trans          &trans               &trans
+        &trans            &trans             &trans           &trans           &trans                 &kp SPACE   &kp HYPER   &kp LGUI  &kp LT    &kp GT    &kp N0                             &trans           &trans           &trans          &trans               &trans
     >;
 };
