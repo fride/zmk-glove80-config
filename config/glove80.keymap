@@ -74,6 +74,12 @@
 #define NAV_R &lt NAVI R
 #define NUM_SPC &lt NUMBERS SPACE
 
+
+// special symbols
+
+#define YEN A(S(N4))
+#define EURO RA(N5) 
+
 / {
 
     #include "combos.dtsi"
